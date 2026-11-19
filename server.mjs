@@ -1,12 +1,16 @@
-// Production server for the built site (run `npm run build` first, then `npm start`).
+// Production server for the built site: `npm start`.
 // Serves the static files in ./dist and listens on the port the host gives us in PORT.
-// No dependencies: Node's own http module only.
+// If ./dist has not been built (hosts that only run `npm start`, such as GoDaddy), it builds the site
+// first with Vite, showing a short "being prepared" page meanwhile. No dependencies beyond Node itself.
+import { spawn } from "node:child_process";
+import { existsSync } from "node:fs";
 import { createServer } from "node:http";
 import { readFile, stat } from "node:fs/promises";
 import { extname, join, normalize, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const root = join(fileURLToPath(new URL(".", import.meta.url)), "dist");
+const here = fileURLToPath(new URL(".", import.meta.url));
+const root = join(here, "dist");
 const port = Number(process.env.PORT) || 3000;
 const host = process.env.HOST || "0.0.0.0"; // listen on all interfaces so the platform can reach it
 
@@ -42,6 +46,36 @@ const isFile = async (p) => {
   }
 };
 
+/* ── Build on start when dist is missing ── */
+let state = existsSync(join(root, "index.html")) ? "ready" : "building";
+
+const building = (res) => {
+  const failed = state === "failed";
+  res.writeHead(503, { "Content-Type": "text/html; charset=utf-8", "Retry-After": "15", "Cache-Control": "no-store" });
+  res.end(`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+${failed ? "" : '<meta http-equiv="refresh" content="10">'}<title>PenCom</title>
+<style>body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:system-ui,sans-serif;background:#F6F8F3;color:#0E2414}
+main{max-width:28rem;padding:2rem;text-align:center}h1{font-size:1.4rem}p{color:#4b5563;line-height:1.5}
+.dot{width:12px;height:12px;border-radius:50%;background:#117F21;display:inline-block;animation:p 1.2s infinite}@keyframes p{50%{opacity:.25}}</style></head>
+<body><main>${failed ? "" : '<span class="dot" aria-hidden="true"></span>'}<h1>${failed ? "The site could not be built" : "The PenCom site is being prepared"}</h1>
+<p>${failed ? "Please check the server log for the build error." : "This takes about a minute after an update. The page will refresh by itself."}</p></main></body></html>`);
+};
+
+if (state === "building") {
+  const vite = join(here, "node_modules", "vite", "bin", "vite.js");
+  if (!existsSync(vite)) {
+    state = "failed";
+    console.error("dist/ is missing and Vite is not installed, so the site cannot be built. Run `npm install` (or `npm run build`) before `npm start`.");
+  } else {
+    console.log("dist/ not found: building the site with Vite…");
+    const child = spawn(process.execPath, [vite, "build"], { cwd: here, stdio: "inherit", env: { ...process.env, NODE_ENV: "production" } });
+    child.on("exit", (code) => {
+      state = code === 0 && existsSync(join(root, "index.html")) ? "ready" : "failed";
+      console.log(state === "ready" ? "Build finished; serving the site." : `Build failed (exit code ${code}).`);
+    });
+  }
+}
+
 const server = createServer(async (req, res) => {
   try {
     if (req.method !== "GET" && req.method !== "HEAD") {
@@ -50,7 +84,11 @@ const server = createServer(async (req, res) => {
     }
     const url = new URL(req.url ?? "/", "http://localhost");
     if (url.pathname === "/healthz") {
-      res.writeHead(200, { "Content-Type": "text/plain" }).end("ok");
+      res.writeHead(200, { "Content-Type": "text/plain" }).end(state === "ready" ? "ok" : state);
+      return;
+    }
+    if (state !== "ready") {
+      building(res);
       return;
     }
     const clean = normalize(decodeURIComponent(url.pathname)).replace(/^([/\\])+/, "");
