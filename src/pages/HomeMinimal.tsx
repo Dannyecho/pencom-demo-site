@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router";
 import { MotionConfig, useReducedMotion } from "framer-motion";
 import CookieConsent from "@/components/CookieConsent";
+import PromoPopup from "@/components/PromoPopup";
 import { scrollToId } from "./about/primitives";
 import Hero from "./homeminimal/Hero";
 import { Alerts, Circulars, Figures, Help, News, Portals } from "./homeminimal/Sections";
@@ -25,6 +26,7 @@ export default function HomeMinimal() {
   return (
     <MotionConfig reducedMotion="user">
       <CookieConsent />
+      <PromoPopup />
       <div className="bg-white text-[#111A13]">
         <Hero />
         <Alerts />

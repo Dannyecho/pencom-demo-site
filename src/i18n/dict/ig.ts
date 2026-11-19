@@ -833,6 +833,9 @@ const ig: Record<string, string> = {
   "Quiet layout with lots of white space": "Nhazi dị jụụ nwere ọtụtụ oghere",
   "The earlier full-width slider design": "Nhazi mbụ nwere foto sara mbara",
   "Audience picker, search and a compact slider": "Nhọrọ ndị ọrụ, ọchụchọ na obere foto",
+  "Design option A (v2)": "Nhazi A (v2)",
+  "A separate version of the whole site, opens on its own home page": "Ụdị ọzọ nke saịtị niile, na-emepe n'ibe mbụ nke ya",
+  "Design option B (v3)": "Nhazi B (v3)",
 };
 
 export default ig;

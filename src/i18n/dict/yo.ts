@@ -833,6 +833,9 @@ const yo: Record<string, string> = {
   "Quiet layout with lots of white space": "Ìtò píparọ́rọ́ pẹ̀lú àyè púpọ̀",
   "The earlier full-width slider design": "Àpẹẹrẹ àtijọ́ pẹ̀lú àwòrán gbígbòòrò",
   "Audience picker, search and a compact slider": "Àṣàyàn olùlò, ìwádìí àti àwòrán kékeré",
+  "Design option A (v2)": "Àpẹẹrẹ A (v2)",
+  "A separate version of the whole site, opens on its own home page": "Ẹ̀yà mìíràn ti gbogbo ojú-òpó, ó ṣí sí ojú-ìwé àkọ́kọ́ tirẹ̀",
+  "Design option B (v3)": "Àpẹẹrẹ B (v3)",
 };
 
 export default yo;

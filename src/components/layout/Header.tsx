@@ -34,6 +34,11 @@ const iconMap: Record<string, React.ReactNode> = {
   Search: <Search className="w-4 h-4" />,
 };
 
+/** Menu link: router link inside this app, plain link for pages outside it (the v2 site at ./v2/). */
+function NavLink({ to, plain, ...rest }: { to: string; plain?: boolean } & React.AnchorHTMLAttributes<HTMLAnchorElement>) {
+  return plain ? <a href={to} {...rest} /> : <Link to={to} {...rest} />;
+}
+
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -166,8 +171,9 @@ export default function Header() {
                                 <ul className="space-y-1.5">
                                   {col.links.map((link) => (
                                     <li key={link.label}>
-                                      <Link
+                                      <NavLink
                                         to={link.href}
+                                        plain={(link as { plain?: boolean }).plain}
                                         aria-current={location.pathname === link.href ? "page" : undefined}
                                         className={`text-sm rounded-md px-2 py-1.5 block transition-colors ${
                                           location.pathname === link.href ? "bg-[#E8F5E9] text-[#117F21]" : "text-gray-600 hover:text-[#117F21] hover:bg-[#F5F5F5]"
@@ -177,7 +183,7 @@ export default function Header() {
                                         {(link as { note?: string }).note && (
                                           <span className="mt-0.5 block text-xs font-normal leading-snug text-gray-500">{(link as { note?: string }).note}</span>
                                         )}
-                                      </Link>
+                                      </NavLink>
                                     </li>
                                   ))}
                                 </ul>
@@ -271,14 +277,15 @@ export default function Header() {
                     <div className="ml-8 mt-1 space-y-1">
                       {item.megaMenu.columns.map((col) =>
                         col.links.slice(0, item.megaMenu!.columns.length === 1 ? undefined : 3).map((link) => (
-                          <Link
+                          <NavLink
                             key={link.label}
                             to={link.href}
+                            plain={(link as { plain?: boolean }).plain}
                             aria-current={location.pathname === link.href ? "page" : undefined}
                             className={`block px-3 py-2 text-sm rounded-md ${location.pathname === link.href ? "font-semibold text-[#117F21]" : "text-gray-500 hover:text-[#117F21]"}`}
                           >
                             {link.label}
-                          </Link>
+                          </NavLink>
                         ))
                       )}
                     </div>

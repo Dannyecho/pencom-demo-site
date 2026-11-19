@@ -833,6 +833,9 @@ const ha: Record<string, string> = {
   "Quiet layout with lots of white space": "Tsari mai natsuwa da sarari mai yawa",
   "The earlier full-width slider design": "Zanen farko mai hoto mai faɗi",
   "Audience picker, search and a compact slider": "Zaɓin masu amfani, bincike da ƙaramin hoto mai juyawa",
+  "Design option A (v2)": "Zane na A (v2)",
+  "A separate version of the whole site, opens on its own home page": "Wani nau'in shafin gaba ɗaya, yana buɗewa a shafin farkonsa",
+  "Design option B (v3)": "Zane na B (v3)",
 };
 
 export default ha;

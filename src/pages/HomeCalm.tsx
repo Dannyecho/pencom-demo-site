@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router";
 import { MotionConfig, useReducedMotion } from "framer-motion";
 import CookieConsent from "@/components/CookieConsent";
+import PromoPopup from "@/components/PromoPopup";
 import { scrollToId } from "./about/primitives";
 import Showcase from "./homecalm/Showcase";
 import { ImportantNotices, LatestNews, RetireeSteps, TalkToUs, TopTasks, WelcomeBar } from "./homecalm/Sections";
@@ -27,6 +28,7 @@ export default function HomeCalm() {
   return (
     <MotionConfig reducedMotion="user">
       <CookieConsent />
+      <PromoPopup />
       <div className="bg-[#FBF8F1] text-[#14261A]">
         <WelcomeBar />
         <Showcase />

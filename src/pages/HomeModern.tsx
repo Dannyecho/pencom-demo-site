@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router";
 import { MotionConfig, useReducedMotion } from "framer-motion";
 import CookieConsent from "@/components/CookieConsent";
+import PromoPopup from "@/components/PromoPopup";
 import { scrollToId } from "./about/primitives";
 import Hero from "./homemodern/Hero";
 import { Circulars, Figures, HelpContact, NewsEvents, OnlineServices } from "./homemodern/Sections";
@@ -27,6 +28,7 @@ export default function HomeModern() {
   return (
     <MotionConfig reducedMotion="user">
       <CookieConsent />
+      <PromoPopup />
       <div className="bg-[#FBFCF9] text-[#0E2414]">
         <Hero />
         <Circulars />

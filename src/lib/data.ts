@@ -19,6 +19,8 @@ export const navItems = [
             { label: "For retirees", href: "/home-retirees", note: "Large type, labelled controls and fewer choices" },
             { label: "Minimal", href: "/home-minimal", note: "Quiet layout with lots of white space" },
             { label: "Classic", href: "/home-classic", note: "The earlier full-width slider design" },
+            { label: "Design option A (v2)", href: "./v2/index.html", note: "A separate version of the whole site, opens on its own home page", plain: true },
+            { label: "Design option B (v3)", href: "./v3/index.html", note: "A separate version of the whole site, opens on its own home page", plain: true },
           ],
         },
       ],

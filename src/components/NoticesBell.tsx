@@ -63,7 +63,8 @@ export default function NoticesBell() {
       /* storage unavailable */
     }
     if (done || unread.length === 0) return;
-    const id = window.setTimeout(() => {
+    let id = 0;
+    const show = () => {
       setPreview(true);
       setOpen(true);
       try {
@@ -71,8 +72,20 @@ export default function NoticesBell() {
       } catch {
         /* ignore */
       }
+    };
+    const afterPromo = () => {
+      window.clearTimeout(id);
+      id = window.setTimeout(show, 600);
+    };
+    id = window.setTimeout(() => {
+      // A first-visit popup is on its way or open: wait for it to close.
+      if (document.documentElement.dataset.promo) window.addEventListener("pencom:promo-done", afterPromo, { once: true });
+      else show();
     }, 900);
-    return () => window.clearTimeout(id);
+    return () => {
+      window.clearTimeout(id);
+      window.removeEventListener("pencom:promo-done", afterPromo);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

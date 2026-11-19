@@ -216,7 +216,7 @@ export function FilterBar({
   );
 
   return (
-    <div className="sticky top-[92px] z-30 -mx-4 px-4 py-3">
+    <div className="sticky top-[92px] z-30 -mx-4 mt-5 px-4 py-3">
       <div className="rounded-3xl bg-white/85 p-2 shadow-[0_18px_40px_-30px_rgba(10,46,16,0.6)] ring-1 ring-black/5 backdrop-blur-xl sm:p-2.5">
         <div className="flex flex-col gap-2 lg:flex-row lg:items-center">
           <div role="group" aria-label={t("Type of news")} className="-mx-1 flex snap-x gap-1 overflow-x-auto px-1 pb-0.5 [scrollbar-width:none] lg:flex-1 [&::-webkit-scrollbar]:hidden">

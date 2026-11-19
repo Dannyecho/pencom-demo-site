@@ -283,8 +283,8 @@ function FeatureCard() {
           </button>
         </div>
 
-        {/* words on a solid card, never on the busy photo */}
-        <div className="absolute inset-x-4 bottom-4">
+        {/* words on a solid card, never on the busy photo; kept to about a third of the slide */}
+        <div className="absolute inset-x-3 bottom-3 sm:inset-x-4 sm:bottom-4">
           <AnimatePresence mode="wait" initial={false}>
             <motion.div
               key={s.id}
@@ -295,24 +295,24 @@ function FeatureCard() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: reduce ? 0 : 10, transition: { duration: 0.2 } }}
               transition={{ duration: 0.5, ease }}
-              className="rounded-3xl bg-white/95 p-5 shadow-xl backdrop-blur sm:p-6"
+              className="rounded-2xl bg-white/95 px-4 py-3.5 shadow-xl backdrop-blur sm:px-5 sm:py-4"
             >
-              <p className={cn("inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.14em]", s.kind === "campaign" ? "bg-[#FFF2CC] text-[#7A5200]" : "bg-[#EEF6EE] text-[#0A4A13]")}>
-                {s.kind === "campaign" && <Megaphone className="h-3.5 w-3.5" aria-hidden="true" />}
+              <p className={cn("inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-[11px] font-bold uppercase tracking-[0.14em]", s.kind === "campaign" ? "bg-[#FFF2CC] text-[#7A5200]" : "bg-[#EEF6EE] text-[#0A4A13]")}>
+                {s.kind === "campaign" && <Megaphone className="h-3 w-3" aria-hidden="true" />}
                 {s.eyebrow}
               </p>
-              <h2 className="mt-3 text-2xl font-bold leading-tight text-[#0E2414] sm:text-[1.7rem]">{s.title}</h2>
-              <p className="mt-2 line-clamp-2 text-[0.95rem] leading-relaxed text-gray-600">{s.summary}</p>
-              <div className="mt-4 flex items-center justify-between gap-3">
-                <button type="button" onClick={() => go(s.cta, navigate)} className={cn("group inline-flex min-h-11 items-center gap-2 rounded-xl bg-[#0A4A13] px-4 text-sm font-semibold text-white transition hover:bg-[#117F21]", focus)}>
+              <h2 className="mt-2 line-clamp-2 text-lg font-bold leading-snug text-[#0E2414] sm:text-xl">{s.title}</h2>
+              <p className="sr-only">{s.summary}</p>
+              <div className="mt-3 flex items-center justify-between gap-3">
+                <button type="button" onClick={() => go(s.cta, navigate)} className={cn("group inline-flex min-h-10 items-center gap-2 rounded-xl bg-[#0A4A13] px-3.5 text-sm font-semibold text-white transition hover:bg-[#117F21]", focus)}>
                   {s.cta.label}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
                 </button>
                 <span className="flex items-center gap-1.5">
-                  <button type="button" onClick={() => goTo(index - 1)} aria-label="Previous slide" className={cn("flex h-10 w-10 items-center justify-center rounded-full ring-1 ring-black/10 transition hover:bg-[#EEF6EE]", focus)}>
+                  <button type="button" onClick={() => goTo(index - 1)} aria-label="Previous slide" className={cn("flex h-9 w-9 items-center justify-center rounded-full ring-1 ring-black/10 transition hover:bg-[#EEF6EE]", focus)}>
                     <ChevronLeft className="h-5 w-5" aria-hidden="true" />
                   </button>
-                  <button type="button" onClick={() => goTo(index + 1)} aria-label="Next slide" className={cn("flex h-10 w-10 items-center justify-center rounded-full ring-1 ring-black/10 transition hover:bg-[#EEF6EE]", focus)}>
+                  <button type="button" onClick={() => goTo(index + 1)} aria-label="Next slide" className={cn("flex h-9 w-9 items-center justify-center rounded-full ring-1 ring-black/10 transition hover:bg-[#EEF6EE]", focus)}>
                     <ChevronRight className="h-5 w-5" aria-hidden="true" />
                   </button>
                 </span>

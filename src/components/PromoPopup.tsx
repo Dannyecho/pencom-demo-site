@@ -57,6 +57,13 @@ export const promos: Promo[] = [
 ].filter((p: Promo) => (!p.starts || p.starts <= today) && (!p.ends || p.ends >= today));
 
 const KEY = "pencom:promo-seen";
+
+/** The popup is closed (or the page left before it showed): let waiting surprises go ahead. */
+function promoDone() {
+  if (!document.documentElement.dataset.promo) return;
+  delete document.documentElement.dataset.promo;
+  window.dispatchEvent(new Event("pencom:promo-done"));
+}
 const DELAY = 1400;
 
 export default function PromoPopup({ items = promos }: { items?: Promo[] }) {
@@ -80,15 +87,22 @@ export default function PromoPopup({ items = promos }: { items?: Promo[] }) {
       /* storage unavailable: show it */
     }
     if (seen) return;
+    // Other first-load surprises (the notices preview) wait until the popup is done.
+    document.documentElement.dataset.promo = "pending";
     const id = window.setTimeout(() => {
       lastFocus.current = document.activeElement as HTMLElement | null;
+      document.documentElement.dataset.promo = "open";
       setOpen(true);
     }, DELAY);
-    return () => window.clearTimeout(id);
+    return () => {
+      window.clearTimeout(id);
+      promoDone();
+    };
   }, [items.length]);
 
   const close = useCallback(() => {
     setOpen(false);
+    promoDone();
     try {
       localStorage.setItem(KEY, "1");
     } catch {

@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router";
 import { MotionConfig, useReducedMotion } from "framer-motion";
 import CookieConsent from "@/components/CookieConsent";
+import PromoPopup from "@/components/PromoPopup";
 import SectionNav from "./about/SectionNav";
 import { scrollToId } from "./about/primitives";
 import HomeHero from "./home/HomeHero";
@@ -41,6 +42,7 @@ export default function Home() {
   return (
     <MotionConfig reducedMotion="user">
       <CookieConsent />
+      <PromoPopup />
       <HomeHero />
       <SectionNav sections={homeSections} pillId="home-nav-pill" />
       <AudienceTasks />

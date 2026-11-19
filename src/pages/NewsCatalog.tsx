@@ -119,7 +119,8 @@ export default function NewsCatalog() {
               intro="Filter by type or year, or search. Your choices stay in the page address, so you can share the view."
             />
 
-            <div className="mt-8">
+            {/* "contents": the sticky bar must sit directly in the section, or it stops sticking at its wrapper. */}
+            <div className="contents">
               <FilterBar
                 kind={kind}
                 setKind={(k) => set("type", k)}
