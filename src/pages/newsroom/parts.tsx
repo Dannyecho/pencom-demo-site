@@ -161,7 +161,7 @@ function Featured({ item }: { item: NewsItem }) {
     >
       <div aria-hidden="true" className="absolute -inset-3 -z-10 translate-x-3 translate-y-3 rounded-[2.2rem] bg-[#0A4A13]" />
       <div className="relative h-[30rem] overflow-hidden rounded-[2rem] bg-[#0E2414] shadow-[0_40px_80px_-40px_rgba(10,46,16,0.7)] sm:h-[34rem]">
-        <img src={item.image} alt={t(item.imageAlt)} className="absolute inset-0 h-full w-full object-cover transition duration-[1.6s] ease-out group-hover:scale-105" fetchPriority="high" />
+        <img src={item.image} alt={t(item.imageAlt)} className="absolute inset-0 h-full w-full object-cover transition [transition-duration:1600ms] ease-out group-hover:scale-105" fetchPriority="high" />
         <div aria-hidden="true" className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-black/45 to-transparent" />
         <p className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full bg-[#FFD84D] px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-[#04140A] shadow">
           <span className="h-1.5 w-1.5 rounded-full bg-[#0A4A13]" aria-hidden="true" />
