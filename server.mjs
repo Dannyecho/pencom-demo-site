@@ -3,14 +3,25 @@
 // If ./dist has not been built (hosts that only run `npm start`, such as GoDaddy), it builds the site
 // first with Vite, showing a short "being prepared" page meanwhile. No dependencies beyond Node itself.
 import { spawn } from "node:child_process";
-import { existsSync } from "node:fs";
+import { accessSync, constants, existsSync } from "node:fs";
 import { createServer } from "node:http";
 import { readFile, stat } from "node:fs/promises";
+import { tmpdir } from "node:os";
 import { extname, join, normalize, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const here = fileURLToPath(new URL(".", import.meta.url));
-const root = join(here, "dist");
+const writable = (dir) => {
+  try {
+    accessSync(dir, constants.W_OK);
+    return true;
+  } catch {
+    return false;
+  }
+};
+// Built site: ./dist, or a temporary folder when the app folder is read-only on the host.
+const builtHere = existsSync(join(here, "dist", "index.html"));
+const root = builtHere || writable(here) ? join(here, "dist") : join(tmpdir(), "pencom-dist");
 const port = Number(process.env.PORT) || 3000;
 const host = process.env.HOST || "0.0.0.0"; // listen on all interfaces so the platform can reach it
 
@@ -68,7 +79,8 @@ if (state === "building") {
     console.error("dist/ is missing and Vite is not installed, so the site cannot be built. Run `npm install` (or `npm run build`) before `npm start`.");
   } else {
     console.log("dist/ not found: building the site with Vite…");
-    const child = spawn(process.execPath, [vite, "build"], { cwd: here, stdio: "inherit", env: { ...process.env, NODE_ENV: "production" } });
+    console.log(`Build output: ${root}`);
+    const child = spawn(process.execPath, [vite, "build", "--outDir", root, "--emptyOutDir"], { cwd: here, stdio: "inherit", env: { ...process.env, NODE_ENV: "production" } });
     child.on("exit", (code) => {
       state = code === 0 && existsSync(join(root, "index.html")) ? "ready" : "failed";
       console.log(state === "ready" ? "Build finished; serving the site." : `Build failed (exit code ${code}).`);
@@ -120,5 +132,5 @@ const server = createServer(async (req, res) => {
 });
 
 server.listen(port, host, () => {
-  console.log(`PenCom site listening on http://${host}:${port}`);
+  console.log(`PenCom site listening on http://${host}:${port} (server version 2, serving ${root})`);
 });
