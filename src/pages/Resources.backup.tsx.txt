@@ -1,0 +1,313 @@
+import { useState } from "react";
+import { motion } from "framer-motion";
+import {
+  BookOpen, FileText, HelpCircle, GraduationCap, Search,
+  Download, ChevronDown, ChevronUp, ExternalLink, MessageCircle
+} from "lucide-react";
+import { Input } from "@/components/ui/input";
+import PageBanner from "@/components/PageBanner";
+import { publications, faqs } from "@/lib/data";
+
+const pubCategories = [
+  { icon: BookOpen, label: "Annual Reports", count: 12 },
+  { icon: FileText, label: "Quarterly Reports", count: 8 },
+  { icon: FileText, label: "Guidelines", count: 15 },
+  { icon: FileText, label: "Circulars", count: 24 },
+  { icon: FileText, label: "Forms", count: 18 },
+  { icon: FileText, label: "Legislation", count: 6 },
+];
+
+const circularsList = [
+  "Circular on Micro Pension Scheme 2026",
+  "Guidelines on Voluntary Contribution",
+  "Updated Pension Contribution Rates",
+  "Circular on Data Recapture Exercise",
+  "Compliance Directive for Employers",
+  "Revised Minimum Pension Guarantee",
+];
+
+const formsList = [
+  "RSA Transfer Request Form",
+  "Benefit Application Form",
+  "Pension Clearance Certificate Form",
+  "Employer Registration Form",
+  "Complaint Form",
+  "FOI Request Form",
+];
+
+const learningMaterials = [
+  { title: "Understanding Your RSA", type: "Guide", icon: BookOpen },
+  { title: "Pension Reform Act Explained", type: "Video", icon: GraduationCap },
+  { title: "How to Choose a PFA", type: "Guide", icon: BookOpen },
+  { title: "Micro Pension for SMEs", type: "Webinar", icon: GraduationCap },
+  { title: "Retirement Planning Basics", type: "Guide", icon: BookOpen },
+  { title: "Compliance for Employers", type: "Video", icon: GraduationCap },
+];
+
+export default function Resources() {
+  const [activeTab, setActiveTab] = useState<"publications" | "circulars" | "faq" | "learning">("publications");
+  const [searchQuery, setSearchQuery] = useState("");
+  const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
+
+  const filteredFaq = faqs.filter((f) => {
+    if (!searchQuery) return true;
+    const q = searchQuery.toLowerCase();
+    return f.question.toLowerCase().includes(q) || f.answer.toLowerCase().includes(q);
+  });
+
+  return (
+    <div className="pb-16">
+      <PageBanner
+        label="Resources"
+        title="Resources & Knowledge Base"
+        description="Access publications, circulars, forms, FAQs, and educational materials about the Nigerian pension system."
+        bgImage="/news-tech.jpg"
+      />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 -mt-8">
+        {/* Tab Navigation */}
+        <div className="flex flex-wrap justify-center gap-3 my-10">
+          {([
+            { key: "publications" as const, label: "Publications", icon: BookOpen },
+            { key: "circulars" as const, label: "Circulars & Forms", icon: FileText },
+            { key: "faq" as const, label: "FAQ", icon: HelpCircle },
+            { key: "learning" as const, label: "Learning", icon: GraduationCap },
+          ]).map((t) => (
+            <button
+              key={t.key}
+              onClick={() => setActiveTab(t.key)}
+              className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all ${
+                activeTab === t.key
+                  ? "bg-[#117F21] text-white shadow-md"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+              }`}
+            >
+              <t.icon className="w-4 h-4" />
+              {t.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Publications Tab */}
+        {activeTab === "publications" && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+          >
+            {/* Category Grid */}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
+              {pubCategories.map((cat, i) => (
+                <motion.div
+                  key={cat.label}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.05 }}
+                  className="text-center p-4 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-all cursor-pointer"
+                >
+                  <div className="w-10 h-10 mx-auto rounded-lg bg-[#E8F5E9] flex items-center justify-center text-[#117F21] mb-2">
+                    <cat.icon className="w-5 h-5" />
+                  </div>
+                  <p className="text-sm font-medium text-gray-700">{cat.label}</p>
+                  <p className="text-xs text-gray-400">{cat.count} items</p>
+                </motion.div>
+              ))}
+            </div>
+
+            {/* Publications Table */}
+            <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead className="bg-gray-50 text-gray-600">
+                    <tr>
+                      <th className="text-left px-5 py-3 font-medium">Title</th>
+                      <th className="text-left px-5 py-3 font-medium">Category</th>
+                      <th className="text-left px-5 py-3 font-medium">Date</th>
+                      <th className="text-left px-5 py-3 font-medium">Size</th>
+                      <th className="text-left px-5 py-3 font-medium">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-100">
+                    {publications.map((pub) => (
+                      <tr
+                        key={pub.title}
+                        className="hover:bg-gray-50/50 transition-colors"
+                      >
+                        <td className="px-5 py-3 font-medium text-gray-900">
+                          {pub.title}
+                        </td>
+                        <td className="px-5 py-3">
+                          <span className="px-2 py-1 bg-[#E8F5E9] text-[#117F21] text-xs rounded-full">
+                            {pub.type}
+                          </span>
+                        </td>
+                        <td className="px-5 py-3 text-gray-500">{pub.date}</td>
+                        <td className="px-5 py-3 text-gray-500">{pub.size}</td>
+                        <td className="px-5 py-3">
+                          <button className="text-[#117F21] hover:underline text-xs flex items-center gap-1">
+                            <Download className="w-3.5 h-3.5" /> Download
+                          </button>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </motion.div>
+        )}
+
+        {/* Circulars & Forms Tab */}
+        {activeTab === "circulars" && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            className="grid md:grid-cols-2 gap-6"
+          >
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-4">Recent Circulars</h3>
+              <div className="space-y-3">
+                {circularsList.map((c) => (
+                  <div
+                    key={c}
+                    className="flex items-center gap-3 p-3 bg-white rounded-lg border border-gray-100"
+                  >
+                    <FileText className="w-4 h-4 text-[#CB9615] shrink-0" />
+                    <span className="text-sm text-gray-700">{c}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-4">Downloadable Forms</h3>
+              <div className="space-y-3">
+                {formsList.map((f) => (
+                  <div
+                    key={f}
+                    className="flex items-center justify-between p-3 bg-white rounded-lg border border-gray-100"
+                  >
+                    <div className="flex items-center gap-3">
+                      <Download className="w-4 h-4 text-[#117F21] shrink-0" />
+                      <span className="text-sm text-gray-700">{f}</span>
+                    </div>
+                    <span className="text-xs text-gray-400">PDF</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        )}
+
+        {/* FAQ Tab */}
+        {activeTab === "faq" && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+          >
+            {/* Search */}
+            <div className="max-w-2xl mx-auto mb-8">
+              <div className="relative">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+                <Input
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search frequently asked questions..."
+                  className="pl-9 border-gray-200 focus:border-[#117F21] focus:ring-[#117F21]"
+                />
+              </div>
+            </div>
+
+            {/* FAQ Accordion */}
+            <div className="max-w-3xl mx-auto space-y-3">
+              {filteredFaq.map((faq, i) => (
+                <div
+                  key={i}
+                  className="bg-white rounded-xl border border-gray-100 overflow-hidden"
+                >
+                  <button
+                    onClick={() =>
+                      setExpandedFaq(expandedFaq === i ? null : i)
+                    }
+                    className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50/50 transition-colors"
+                  >
+                    <span className="font-medium text-gray-900 text-sm pr-4">
+                      {faq.question}
+                    </span>
+                    {expandedFaq === i ? (
+                      <ChevronUp className="w-4 h-4 text-gray-400 shrink-0" />
+                    ) : (
+                      <ChevronDown className="w-4 h-4 text-gray-400 shrink-0" />
+                    )}
+                  </button>
+                  {expandedFaq === i && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      transition={{ duration: 0.3 }}
+                      className="px-4 pb-4 border-t border-gray-50 pt-3"
+                    >
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        {faq.answer}
+                      </p>
+                    </motion.div>
+                  )}
+                </div>
+              ))}
+              {filteredFaq.length === 0 && (
+                <p className="text-center text-gray-500 py-8">
+                  No FAQs match your search.
+                </p>
+              )}
+            </div>
+
+            {/* CTA */}
+            <div className="text-center mt-8">
+              <p className="text-sm text-gray-500">Still have questions?</p>
+              <button
+                onClick={() =>
+                  document.getElementById("chat-trigger")?.click()
+                }
+                className="mt-2 inline-flex items-center gap-2 text-[#117F21] font-medium hover:underline"
+              >
+                <MessageCircle className="w-4 h-4" /> Ask our AI Assistant
+              </button>
+            </div>
+          </motion.div>
+        )}
+
+        {/* Learning Tab */}
+        {activeTab === "learning" && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-4"
+          >
+            {learningMaterials.map((mat, i) => (
+              <motion.div
+                key={mat.title}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.08 }}
+                className="flex items-start gap-3 p-4 bg-white rounded-xl border border-gray-100 hover:shadow-md transition-all"
+              >
+                <div className="w-10 h-10 rounded-lg bg-[#E8F5E9] flex items-center justify-center text-[#117F21] shrink-0">
+                  <mat.icon className="w-5 h-5" />
+                </div>
+                <div className="flex-1">
+                  <p className="font-medium text-gray-900 text-sm">
+                    {mat.title}
+                  </p>
+                  <p className="text-xs text-gray-400 mt-0.5">{mat.type}</p>
+                </div>
+                <ExternalLink className="w-4 h-4 text-gray-300 shrink-0" />
+              </motion.div>
+            ))}
+          </motion.div>
+        )}
+      </div>
+    </div>
+  );
+}

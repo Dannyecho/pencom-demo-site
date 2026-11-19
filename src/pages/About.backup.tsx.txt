@@ -1,0 +1,370 @@
+import { useState } from "react";
+import PageBanner from "@/components/PageBanner";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  Shield, Target, Eye, Users, Award,
+  Landmark, CheckCircle, ChevronRight, X
+} from "lucide-react";
+
+const fadeUp = {
+  initial: { opacity: 0, y: 30 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, margin: "-60px" },
+  transition: { duration: 0.5 },
+};
+
+const stagger = {
+  initial: {},
+  whileInView: {},
+  viewport: { once: true },
+};
+
+const staggerItem = {
+  initial: { opacity: 0, y: 20 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+  transition: { duration: 0.4 },
+};
+
+// =============================================================================
+// REAL EXECUTIVE LEADERSHIP DATA (from pencom.gov.ng)
+// =============================================================================
+
+const executives = [
+  {
+    name: "Omolola Oloworaran",
+    title: "Director General",
+    image: "/exec-dg.jpg",
+    bio: "Chief Executive Officer of the National Pension Commission, responsible for the overall direction and administration of the Commission.",
+    featured: true,
+  },
+  {
+    name: "Hon. Bello Abubakar Malabu",
+    title: "Commissioner, Administration",
+    image: "/exec-admin.jpg",
+    bio: "Oversees administrative functions including human resources, corporate services, and general administration of the Commission.",
+    featured: false,
+  },
+  {
+    name: "Dr. Charles Efe Sylvester Emukowhate",
+    title: "Commissioner, Finance",
+    image: "/exec-finance.jpg",
+    bio: "Manages the Commission's financial operations, budgeting, accounting, and fiscal policy implementation.",
+    featured: false,
+  },
+  {
+    name: "Hon. Hafiz Muhammad Kawu Ibrahim OON, Mni",
+    title: "Commissioner, Technical",
+    image: "/exec-tech.jpg",
+    bio: "Responsible for technical operations including pension regulation, supervision, and industry standards development.",
+    featured: false,
+  },
+  {
+    name: "Hon. Samuel Chigozie Uwandu, CPA",
+    title: "Commissioner, Inspectorate",
+    image: "/exec-insp.jpg",
+    bio: "Leads the inspectorate division ensuring compliance and enforcement of pension regulations across operators.",
+    featured: false,
+  },
+  {
+    name: "Mr. Muhammad Sani Muhammad",
+    title: "Commission Secretary / Legal Adviser",
+    image: "/exec-sec.jpg",
+    bio: "Provides legal counsel and secretariat services to the Commission, ensuring regulatory compliance and governance.",
+    featured: false,
+  },
+];
+
+const values = [
+  { icon: Shield, title: "Integrity", desc: "We uphold the highest ethical standards in all our operations" },
+  { icon: Target, title: "Professionalism", desc: "We deliver excellence through competence and diligence" },
+  { icon: Eye, title: "Transparency", desc: "We maintain open communication with all stakeholders" },
+  { icon: Users, title: "Service", desc: "We put the needs of pension contributors first" },
+];
+
+// =============================================================================
+// EXECUTIVE DETAIL MODAL
+// =============================================================================
+
+function ExecModal({ exec, onClose }: { exec: typeof executives[0] | null; onClose: () => void }) {
+  if (!exec) return null;
+  return (
+    <AnimatePresence>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
+        onClick={onClose}
+      >
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.9, y: 20 }}
+          transition={{ duration: 0.3 }}
+          className="bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden"
+          onClick={(e) => e.stopPropagation()}
+        >
+          {/* Image header */}
+          <div className="relative h-64 bg-gradient-to-b from-[#0A4A13] to-[#117F21] overflow-hidden">
+            <img
+              src={exec.image}
+              alt={exec.name}
+              className="absolute inset-0 w-full h-full object-cover object-top"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+            <button
+              onClick={onClose}
+              className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/20 backdrop-blur flex items-center justify-center text-white hover:bg-white/40 transition-colors"
+            >
+              <X className="w-4 h-4" />
+            </button>
+            <div className="absolute bottom-4 left-4 right-4">
+              <span className="inline-block px-2.5 py-0.5 bg-[#CB9615] text-white text-[10px] font-bold uppercase tracking-wider rounded-full mb-2">
+                {exec.title}
+              </span>
+              <h3 className="text-xl font-bold text-white">{exec.name}</h3>
+            </div>
+          </div>
+          {/* Bio */}
+          <div className="p-6">
+            <p className="text-sm text-gray-600 leading-relaxed">{exec.bio}</p>
+            <div className="mt-4 pt-4 border-t border-gray-100">
+              <p className="text-xs text-gray-400">National Pension Commission</p>
+              <p className="text-xs text-gray-400">Federal Republic of Nigeria</p>
+            </div>
+          </div>
+        </motion.div>
+      </motion.div>
+    </AnimatePresence>
+  );
+}
+
+// =============================================================================
+// MAIN PAGE
+// =============================================================================
+
+export default function About() {
+  const [selectedExec, setSelectedExec] = useState<typeof executives[0] | null>(null);
+  const dg = executives.find((e) => e.featured)!;
+  const commissioners = executives.filter((e) => !e.featured);
+
+  return (
+    <div className="pb-16">
+      <PageBanner
+        label="About Us"
+        title="About PenCom"
+        description="The National Pension Commission is the apex regulatory body for the Nigerian pension industry, established under the Pension Reform Act 2014."
+        bgImage="/banner-abstract.jpg"
+      />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 -mt-8">
+
+        {/* ─── Mission & Vision ─── */}
+        <motion.div {...fadeUp} className="grid md:grid-cols-2 gap-6 mb-16">
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200/80 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div className="w-12 h-12 rounded-xl bg-[#E8F5E9] flex items-center justify-center mb-4">
+              <Target className="w-6 h-6 text-[#117F21]" />
+            </div>
+            <h2 className="text-xl font-bold text-[#0A4A13] mb-3">Our Mission</h2>
+            <p className="text-gray-600 leading-relaxed">
+              To regulate, supervise and ensure the effective administration of pension matters in Nigeria, while promoting a sustainable pension system that guarantees retirement benefits for all Nigerian workers.
+            </p>
+          </div>
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200/80 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <div className="w-12 h-12 rounded-xl bg-[#FFF8E1] flex items-center justify-center mb-4">
+              <Eye className="w-6 h-6 text-[#CB9615]" />
+            </div>
+            <h2 className="text-xl font-bold text-[#0A4A13] mb-3">Our Vision</h2>
+            <p className="text-gray-600 leading-relaxed">
+              To be a model pension regulatory authority in Africa, ensuring that every Nigerian worker receives their retirement benefits as and when due, through a well-regulated and supervised pension industry.
+            </p>
+          </div>
+        </motion.div>
+
+        {/* ─── Core Values ─── */}
+        <motion.div {...fadeUp} className="mb-16">
+          <div className="text-center mb-8">
+            <span className="text-sm font-semibold text-[#117F21] uppercase tracking-wider">What Guides Us</span>
+            <h2 className="text-3xl font-bold text-[#0A4A13] mt-2">Core Values</h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {values.map((v) => (
+              <div key={v.title} className="bg-white rounded-2xl p-6 border border-gray-200/80 text-center hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                <div className="w-12 h-12 mx-auto rounded-xl bg-[#E8F5E9] flex items-center justify-center text-[#117F21] mb-3 transition-transform duration-300 hover:scale-110">
+                  <v.icon className="w-6 h-6" />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-1">{v.title}</h3>
+                <p className="text-sm text-gray-500">{v.desc}</p>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* ═══════════════════════════════════════════════════════════════ */}
+        {/* ─── EXECUTIVE LEADERSHIP — Real Photos from PenCom.gov.ng ─── */}
+        {/* ═══════════════════════════════════════════════════════════════ */}
+        <motion.div {...fadeUp} className="mb-16" id="executive">
+          <div className="text-center mb-10">
+            <span className="text-sm font-semibold text-[#117F21] uppercase tracking-wider">Our Leadership</span>
+            <h2 className="text-3xl font-bold text-[#0A4A13] mt-2">Executive Management</h2>
+            <p className="text-gray-500 mt-3 max-w-xl mx-auto">
+              Meet the dedicated leaders steering the National Pension Commission towards excellence in retirement security for all Nigerian workers.
+            </p>
+          </div>
+
+          {/* Featured: Director General */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-8"
+          >
+            <button
+              onClick={() => setSelectedExec(dg)}
+              className="w-full group bg-white rounded-2xl border border-gray-200/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden focus-visible:ring-2 focus-visible:ring-[#117F21] focus-visible:ring-offset-2 outline-none text-left"
+            >
+              <div className="flex flex-col md:flex-row">
+                {/* DG Photo */}
+                <div className="md:w-72 lg:w-80 h-72 md:min-h-[320px] shrink-0 relative overflow-hidden bg-gradient-to-b from-[#0A4A13] to-[#117F21]">
+                  <img
+                    src={dg.image}
+                    alt={dg.name}
+                    className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute top-4 left-4 z-10">
+                    <span className="px-3 py-1 bg-[#CB9615] text-white text-[10px] font-bold uppercase tracking-wider rounded-full shadow-md">
+                      Director General
+                    </span>
+                  </div>
+                </div>
+                {/* DG Info */}
+                <div className="flex-1 p-6 md:p-8 flex flex-col justify-center">
+                  <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2 group-hover:text-[#117F21] transition-colors">
+                    {dg.name}
+                  </h3>
+                  <p className="text-sm font-semibold text-[#CB9615] uppercase tracking-wider mb-4">
+                    {dg.title}
+                  </p>
+                  <p className="text-gray-600 leading-relaxed mb-6 max-w-lg">
+                    {dg.bio}
+                  </p>
+                  <div className="flex items-center gap-2 text-sm font-semibold text-[#117F21]">
+                    <span>View Profile</span>
+                    <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </div>
+              </div>
+            </button>
+          </motion.div>
+
+          {/* Commissioners Grid */}
+          <motion.div
+            className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4"
+            {...stagger}
+          >
+            {commissioners.map((exec, i) => (
+              <motion.div
+                key={exec.name}
+                {...staggerItem}
+                transition={{ delay: i * 0.08 }}
+              >
+                <button
+                  onClick={() => setSelectedExec(exec)}
+                  className="group w-full bg-white rounded-2xl border border-gray-200/80 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 overflow-hidden focus-visible:ring-2 focus-visible:ring-[#117F21] focus-visible:ring-offset-2 outline-none text-left"
+                >
+                  {/* Photo */}
+                  <div className="h-48 overflow-hidden relative bg-gradient-to-b from-gray-100 to-gray-200">
+                    <img
+                      src={exec.image}
+                      alt={exec.name}
+                      className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/40 to-transparent z-10" />
+                  </div>
+                  {/* Info */}
+                  <div className="p-4">
+                    <h4 className="font-bold text-gray-900 text-sm mb-1 group-hover:text-[#117F21] transition-colors line-clamp-1">
+                      {exec.name}
+                    </h4>
+                    <p className="text-[11px] font-semibold text-[#CB9615] uppercase tracking-wider">
+                      {exec.title}
+                    </p>
+                  </div>
+                </button>
+              </motion.div>
+            ))}
+          </motion.div>
+        </motion.div>
+
+        {/* ─── History ─── */}
+        <motion.div {...fadeUp} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-200/80 hover:shadow-md transition-all duration-300 mb-16">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="w-10 h-10 rounded-lg bg-[#E8F5E9] flex items-center justify-center">
+              <Landmark className="w-5 h-5 text-[#117F21]" />
+            </div>
+            <div>
+              <span className="text-sm font-semibold text-[#117F21] uppercase tracking-wider">Our Journey</span>
+              <h2 className="text-2xl font-bold text-[#0A4A13]">Our History</h2>
+            </div>
+          </div>
+          <div className="space-y-8">
+            {[
+              { year: "2004", title: "Pension Reform Act Enacted", desc: "The Pension Reform Act was signed into law, establishing the Contributory Pension Scheme (CPS) and the National Pension Commission (PenCom)." },
+              { year: "2014", title: "Pension Reform Act 2014", desc: "The Act was repealed and re-enacted as the Pension Reform Act 2014, strengthening the regulatory framework and expanding coverage." },
+              { year: "2024", title: "20+ Years of Service", desc: "PenCom has grown to regulate 22 PFAs, 4 PFCs, and oversee pension assets exceeding N20.5 trillion, serving over 10 million registered contributors." },
+            ].map((item, i) => (
+              <div key={i} className="flex gap-5">
+                <div className="w-14 shrink-0 text-right pt-0.5">
+                  <span className="text-lg font-bold text-[#117F21]">{item.year}</span>
+                </div>
+                <div className="w-px bg-gray-200 relative">
+                  <div className="absolute top-2 -left-1.5 w-3 h-3 rounded-full bg-[#117F21] ring-4 ring-[#E8F5E9]" />
+                </div>
+                <div className="pb-2">
+                  <h4 className="font-semibold text-gray-900">{item.title}</h4>
+                  <p className="text-sm text-gray-500 mt-1 leading-relaxed">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* ─── Service Charter ─── */}
+        <motion.div {...fadeUp} className="bg-gradient-to-br from-[#E8F5E9] to-white rounded-2xl p-8 border border-[#117F21]/10">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-10 h-10 rounded-lg bg-[#117F21]/10 flex items-center justify-center">
+              <Award className="w-5 h-5 text-[#117F21]" />
+            </div>
+            <div>
+              <span className="text-sm font-semibold text-[#117F21] uppercase tracking-wider">Our Promise</span>
+              <h2 className="text-2xl font-bold text-[#0A4A13]">Service Charter</h2>
+            </div>
+          </div>
+          <p className="text-gray-600 mb-6">
+            PenCom is committed to providing efficient, transparent, and courteous service to all stakeholders. Our service charter outlines our commitments and the standards you can expect.
+          </p>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              "Respond to all enquiries within 48 hours",
+              "Process RSA transfers within 5 working days",
+              "Issue Pension Clearance Certificates within 10 working days",
+              "Provide accessible complaint resolution within 14 working days",
+              "Publish quarterly industry reports promptly",
+              "Maintain 99.9% uptime on all digital platforms",
+            ].map((commitment, i) => (
+              <div key={i} className="flex items-start gap-3 p-3 rounded-xl bg-white/60">
+                <CheckCircle className="w-5 h-5 text-[#117F21] shrink-0 mt-0.5" />
+                <span className="text-sm text-gray-700">{commitment}</span>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Executive Detail Modal */}
+      {selectedExec && <ExecModal exec={selectedExec} onClose={() => setSelectedExec(null)} />}
+    </div>
+  );
+}

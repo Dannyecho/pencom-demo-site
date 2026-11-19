@@ -1,0 +1,665 @@
+import { useState, useEffect } from "react";
+import { Link } from "react-router";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  Shield, ArrowRight, ChevronLeft, ChevronRight,
+  Search, Users, Download, Calculator, TrendingUp,
+  FileCheck, ArrowRightLeft, UserCircle, Heart,
+  Calendar, Newspaper, MessageCircle, Phone, UserPlus,
+  BarChart3, Smartphone, PlayCircle, AlertTriangle,
+  Wallet, Building2, ExternalLink, RefreshCw, Banknote
+} from "lucide-react";
+import { heroSlides, quickActions, stats, latestNews, services, externalPortals } from "@/lib/data";
+import ReportGovBadge from "@/components/ReportGovBadge";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import AlertBanner from "@/components/AlertBanner";
+import CookieConsent from "@/components/CookieConsent";
+
+const fadeUp = {
+  initial: { opacity: 0, y: 30 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, margin: "-60px" },
+  transition: { duration: 0.5 },
+};
+
+const stagger = {
+  initial: {},
+  whileInView: {},
+  viewport: { once: true },
+};
+
+const staggerItem = {
+  initial: { opacity: 0, y: 20 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true },
+  transition: { duration: 0.4 },
+};
+
+const statIcons: Record<string, React.ReactNode> = {
+  Users: <Users className="w-6 h-6" />,
+  Wallet: <Wallet className="w-6 h-6" />,
+  Building: <Building2 className="w-6 h-6" />,
+  Calendar: <Calendar className="w-6 h-6" />,
+};
+
+const portalIcons: Record<string, React.ReactNode> = {
+  ExternalLink: <ExternalLink className="w-4 h-4" />,
+  Heart: <Heart className="w-4 h-4" />,
+  RefreshCw: <RefreshCw className="w-4 h-4" />,
+  Banknote: <Banknote className="w-4 h-4" />,
+};
+
+const actionIcons: Record<string, React.ReactNode> = {
+  Search: <Search className="w-5 h-5" />,
+  Users: <Users className="w-5 h-5" />,
+  Download: <Download className="w-5 h-5" />,
+  Calculator: <Calculator className="w-5 h-5" />,
+  ArrowRightLeft: <ArrowRightLeft className="w-5 h-5" />,
+  UserCircle: <UserCircle className="w-5 h-5" />,
+  TrendingUp: <TrendingUp className="w-5 h-5" />,
+  FileCheck: <FileCheck className="w-5 h-5" />,
+  UserPlus: <UserPlus className="w-5 h-5" />,
+  Heart: <Heart className="w-5 h-5" />,
+};
+
+export default function Home() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const slide = heroSlides[currentSlide];
+
+  return (
+    <div>
+      {/* Alert Banner - Home page only */}
+      <AlertBanner />
+
+      {/* Cookie Consent - Home page only */}
+      <CookieConsent />
+
+      {/* Hero Section with Background Images */}
+      <section className="relative h-[520px] md:h-[600px] overflow-hidden">
+        {/* Background Image */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentSlide}
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 1.05 }}
+            transition={{ duration: 1.2 }}
+            className="absolute inset-0"
+          >
+            {slide.image && (
+              <img
+                src={slide.image}
+                alt=""
+                className="w-full h-full object-cover"
+              />
+            )}
+            {/* Dark gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0A4A13]/95 via-[#0A4A13]/80 to-[#117F21]/60" />
+            {/* Bottom fade */}
+            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0A4A13]/50 to-transparent" />
+          </motion.div>
+        </AnimatePresence>
+
+        {/* Pattern overlay */}
+        <div className="absolute inset-0 opacity-5" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+        }} />
+
+        {/* Top Bar: ReportGov + Language */}
+        <div className="relative z-20 max-w-7xl mx-auto px-4 pt-3">
+          <div className="flex items-center justify-between">
+            {/* ReportGov Badge - Top Left */}
+            <ReportGovBadge />
+
+            {/* Language Switcher - Top Right */}
+            <LanguageSwitcher />
+          </div>
+        </div>
+
+        {/* Hero Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 h-[calc(100%-48px)] flex items-center">
+          <div className="max-w-2xl">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentSlide}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.5 }}
+              >
+                <div className="flex items-center gap-2 mb-4">
+                  <Shield className="w-5 h-5 text-[#CB9615]" />
+                  <span className="text-sm font-medium text-[#CB9615] tracking-wide uppercase">
+                    {slide.subtitle}
+                  </span>
+                </div>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
+                  {slide.title}
+                </h1>
+                <p className="text-lg text-white/85 mb-8 leading-relaxed max-w-xl">
+                  {slide.description}
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <Link
+                    to={slide.cta.href}
+                    className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#CB9615] text-white font-semibold rounded-lg hover:bg-[#8B6910] hover:shadow-xl active:scale-[0.98] transition-all duration-200 shadow-lg focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A4A13] outline-none"
+                  >
+                    {slide.cta.label}
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                  <Link
+                    to={slide.secondaryCta.href}
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-white/15 backdrop-blur text-white font-semibold rounded-lg hover:bg-white/25 active:scale-[0.98] transition-all duration-200 border border-white/20 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A4A13] outline-none"
+                  >
+                    {slide.secondaryCta.label}
+                  </Link>
+                </div>
+              </motion.div>
+            </AnimatePresence>
+
+            {/* Slide indicators */}
+            <div className="absolute bottom-8 left-4 flex items-center gap-2">
+              {heroSlides.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrentSlide(i)}
+                  className={`h-2 rounded-full transition-all duration-300 hover:scale-125 ${
+                    i === currentSlide ? "w-8 bg-[#CB9615]" : "w-2 bg-white/40 hover:bg-white/60"
+                  }`}
+                  aria-label={`Slide ${i + 1}`}
+                />
+              ))}
+              <button
+                onClick={() => setCurrentSlide((currentSlide - 1 + heroSlides.length) % heroSlides.length)}
+                className="ml-4 w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/25 hover:scale-110 active:scale-95 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A4A13] outline-none"
+                aria-label="Previous slide"
+              >
+                <ChevronLeft className="w-4 h-4 text-white" />
+              </button>
+              <button
+                onClick={() => setCurrentSlide((currentSlide + 1) % heroSlides.length)}
+                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/25 hover:scale-110 active:scale-95 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A4A13] outline-none"
+                aria-label="Next slide"
+              >
+                <ChevronRight className="w-4 h-4 text-white" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Actions - Left border accent, prominent icons */}
+      <section className="py-10 bg-white border-b border-gray-200/60">
+        <div className="max-w-7xl mx-auto px-4">
+          <motion.div
+            className="grid grid-cols-2 md:grid-cols-4 gap-4"
+            {...stagger}
+          >
+            {quickActions.map((action, i) => (
+              <motion.div key={action.label} {...staggerItem} transition={{ delay: i * 0.1 }}>
+                <Link
+                  to={action.href}
+                  className="group relative flex items-center gap-3.5 p-4 pl-5 rounded-xl border border-gray-200/80 bg-white shadow-sm hover:shadow-md hover:border-[#117F21]/20 hover:-translate-y-0.5 hover:bg-[#F8FAFC] transition-all duration-300 focus-visible:ring-2 focus-visible:ring-[#117F21] focus-visible:ring-offset-2 outline-none overflow-hidden"
+                >
+                  {/* Left border accent */}
+                  <div
+                    className="absolute left-0 top-3 bottom-3 w-[3px] rounded-full transition-all duration-300 group-hover:top-2 group-hover:bottom-2"
+                    style={{ backgroundColor: action.color }}
+                  />
+                  <div
+                    className="w-11 h-11 rounded-xl flex items-center justify-center shrink-0 transition-transform duration-300 group-hover:scale-110"
+                    style={{ backgroundColor: action.color + "12", color: action.color }}
+                  >
+                    {actionIcons[action.icon] || <Shield className="w-5 h-5" />}
+                  </div>
+                  <span className="text-sm font-semibold text-gray-800 group-hover:text-[#117F21] transition-colors">
+                    {action.label}
+                  </span>
+                  <ArrowRight className="w-4 h-4 ml-auto text-gray-300 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+                </Link>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Stats - Unique icons, green subtitle, solid background */}
+      <section className="py-16 bg-[#F8FAFC]">
+        <div className="max-w-7xl mx-auto px-4">
+          <motion.div className="text-center mb-10" {...fadeUp}>
+            <span className="text-sm font-semibold text-[#117F21] uppercase tracking-wider">
+              By The Numbers
+            </span>
+            <h2 className="text-3xl font-bold text-[#0A4A13] mt-2">
+              Nigeria's Pension Industry at a Glance
+            </h2>
+          </motion.div>
+          <motion.div
+            className="grid grid-cols-2 md:grid-cols-4 gap-6"
+            {...stagger}
+          >
+            {stats.map((stat, i) => {
+              const accentColors = ["#117F21", "#CB9615", "#B52026", "#1E88E5"];
+              const bgColors = ["#E8F5E9", "#FFF8E1", "#FDE8E8", "#E3F2FD"];
+              return (
+                <motion.div
+                  key={stat.label}
+                  {...staggerItem}
+                  transition={{ delay: i * 0.15 }}
+                  className="text-center p-6 bg-white rounded-2xl border border-gray-200/80 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-[#117F21] focus-visible:ring-offset-2 outline-none"
+                >
+                  <div
+                    className="w-12 h-12 mx-auto rounded-xl flex items-center justify-center mb-3"
+                    style={{ backgroundColor: bgColors[i], color: accentColors[i] }}
+                  >
+                    {stat.icon ? statIcons[stat.icon] : <TrendingUp className="w-6 h-6" />}
+                  </div>
+                  <div className="text-3xl md:text-4xl font-bold mb-1" style={{ color: accentColors[i] }}>
+                    {stat.value}
+                  </div>
+                  <div className="text-xs md:text-sm text-gray-500 font-medium">
+                    {stat.label}
+                  </div>
+                  {stat.suffix && (
+                    <div className="text-xs text-gray-400 mt-1">{stat.suffix}</div>
+                  )}
+                </motion.div>
+              );
+            })}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Services Section - Red accent badges */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <motion.div className="text-center mb-12" {...fadeUp}>
+            <span className="text-sm font-semibold text-[#117F21] uppercase tracking-wider">
+              Our Services
+            </span>
+            <h2 className="text-3xl font-bold text-[#0A4A13] mt-2">
+              Pension Services for Everyone
+            </h2>
+            <p className="text-gray-500 mt-3 max-w-xl mx-auto">
+              Whether you are an employee, employer, or self-employed, we have pension services tailored to your needs.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+            {...stagger}
+          >
+            {services.map((service, i) => (
+              <motion.div key={service.title} {...staggerItem} transition={{ delay: i * 0.1 }}>
+                <Link
+                  to={service.href}
+                  className="group block p-6 bg-white rounded-2xl border border-gray-200/80 hover:border-[#117F21]/30 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full focus-visible:ring-2 focus-visible:ring-[#117F21] focus-visible:ring-offset-2 outline-none"
+                >
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="w-12 h-12 rounded-xl bg-[#E8F5E9] flex items-center justify-center text-[#117F21] transition-transform duration-300 group-hover:scale-110">
+                      {actionIcons[service.icon] || <Shield className="w-6 h-6" />}
+                    </div>
+                    <span
+                      className={`text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full ${
+                        service.category === "individual"
+                          ? "bg-green-50 text-[#117F21]"
+                          : "bg-red-50 text-[#B52026]"
+                      }`}
+                    >
+                      {service.category}
+                    </span>
+                  </div>
+                  <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-[#117F21] transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm text-gray-500 leading-relaxed">
+                    {service.description}
+                  </p>
+                  <div className="mt-4 flex items-center gap-1 text-sm font-semibold text-[#117F21]">
+                    <span className="group-hover:gap-2 transition-all">Learn more</span>
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          <motion.div className="text-center mt-10" {...fadeUp}>
+            <Link
+              to="/services"
+              className="inline-flex items-center gap-2 px-6 py-3 border border-[#117F21] text-[#117F21] font-semibold rounded-lg hover:bg-[#117F21]/5 active:scale-[0.98] transition-all duration-200 focus-visible:ring-2 focus-visible:ring-[#117F21] focus-visible:ring-offset-2 outline-none"
+            >
+              View All Services
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Video Highlight Section */}
+      <section className="py-16 bg-gradient-to-br from-[#565455] to-[#424242] relative overflow-hidden">
+        {/* Subtle pattern overlay */}
+        <div className="absolute inset-0 opacity-[0.03]" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+        }} />
+
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <motion.div className="text-center mb-10" {...fadeUp}>
+            <span className="text-sm font-semibold text-[#CB9615] uppercase tracking-wider drop-shadow-sm">
+              In the Spotlight
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">
+              PenCom at Work
+            </h2>
+            <p className="text-white/70 mt-3 max-w-xl mx-auto">
+              Watch how the National Pension Commission is transforming retirement security for millions of Nigerians.
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="max-w-4xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
+              <video
+                controls
+                poster="/video-poster.jpg"
+                className="w-full aspect-video object-cover"
+                preload="metadata"
+              >
+                <source src="/highlight-video2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+
+              {/* Play overlay that shows initially */}
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <PlayCircle className="w-10 h-10 text-white" />
+                </div>
+              </div>
+
+              {/* Video badge */}
+              <div className="absolute bottom-4 left-4 px-3 py-1.5 bg-black/60 rounded-full text-xs text-white/80 flex items-center gap-2">
+                <Shield className="w-3.5 h-3.5 text-[#CB9615]" />
+                National Pension Commission
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Video stats row */}
+          <motion.div
+            className="grid grid-cols-3 gap-6 max-w-2xl mx-auto mt-10"
+            {...stagger}
+          >
+            {[
+              { label: "Contributors", value: "10.2M+" },
+              { label: "Total AUM", value: "N20.5 Trillion" },
+              { label: "Licensed PFAs", value: "22" },
+            ].map((item, i) => (
+              <motion.div
+                key={item.label}
+                {...staggerItem}
+                transition={{ delay: i * 0.15 }}
+                className="text-center"
+              >
+                <p className="text-2xl md:text-3xl font-bold text-white">{item.value}</p>
+                <p className="text-xs text-white/50 mt-1">{item.label}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Latest News - Solid background, proper button */}
+      <section className="py-16 bg-[#F8FAFC]">
+        <div className="max-w-7xl mx-auto px-4">
+          <motion.div className="flex items-end justify-between mb-10" {...fadeUp}>
+            <div>
+              <span className="text-sm font-semibold text-[#B52026] uppercase tracking-wider">
+                News & Updates
+              </span>
+              <h2 className="text-3xl font-bold text-[#0A4A13] mt-2">
+                Latest from PenCom
+              </h2>
+            </div>
+            <Link
+              to="/connect"
+              className="hidden md:inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-[#117F21] bg-white border border-[#117F21]/20 rounded-lg hover:bg-[#117F21]/5 hover:border-[#117F21]/40 active:scale-[0.98] transition-all duration-200 focus-visible:ring-2 focus-visible:ring-[#117F21] focus-visible:ring-offset-2 outline-none"
+            >
+              View all news <ArrowRight className="w-4 h-4" />
+            </Link>
+          </motion.div>
+
+          <motion.div
+            className="grid md:grid-cols-3 gap-6"
+            {...stagger}
+          >
+            {latestNews.map((news, i) => (
+              <motion.div key={news.id} {...staggerItem} transition={{ delay: i * 0.15 }}>
+                <Link
+                  to="/connect"
+                  className="group block bg-white rounded-2xl overflow-hidden border border-gray-200/80 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-[#117F21] focus-visible:ring-offset-2 outline-none"
+                >
+                  <div className="h-52 bg-gray-200 overflow-hidden relative">
+                    <img
+                      src={news.image}
+                      alt={news.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      loading="lazy"
+                      onError={(e) => {
+                        // Fallback if image fails to load
+                        const target = e.currentTarget;
+                        target.style.display = 'none';
+                      }}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                  </div>
+                  <div className="p-5">
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 bg-green-50 text-[#117F21] rounded-full">
+                        {news.category}
+                      </span>
+                      <span className="text-[11px] text-gray-500 font-medium flex items-center gap-1">
+                        <Calendar className="w-3 h-3" />
+                        {new Date(news.date).toLocaleDateString("en-NG", {
+                          month: "short",
+                          day: "numeric",
+                          year: "numeric",
+                        })}
+                      </span>
+                    </div>
+                    <h3 className="font-semibold text-gray-900 mb-2 group-hover:text-[#117F21] transition-colors line-clamp-2">
+                      {news.title}
+                    </h3>
+                    <p className="text-sm text-gray-500 line-clamp-2">
+                      {news.excerpt}
+                    </p>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* I Have a Complaint Section - White card with red left accent */}
+      <section className="py-16 bg-[#F8FAFC]">
+        <div className="max-w-7xl mx-auto px-4">
+          <motion.div
+            {...fadeUp}
+            className="relative overflow-hidden rounded-2xl bg-white border border-gray-200/80 shadow-sm p-6 md:p-8"
+          >
+            {/* Red left border accent */}
+            <div className="absolute left-0 top-4 bottom-4 w-1 rounded-full bg-[#B52026]" />
+            <div className="flex flex-col md:flex-row items-center gap-6 pl-4">
+              <div className="w-14 h-14 rounded-xl bg-[#FDE8E8] flex items-center justify-center shrink-0">
+                <AlertTriangle className="w-7 h-7 text-[#B52026]" />
+              </div>
+              <div className="flex-1 text-center md:text-left">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
+                  I Have a Complaint
+                </h3>
+                <p className="text-sm text-gray-500 mb-5 leading-relaxed">
+                  Experiencing issues with your pension, employer non-compliance, or any of our services? File a complaint and PenCom will investigate within 14 working days. Your identity is protected under the Whistleblower Protection Policy.
+                </p>
+                <div className="flex flex-wrap justify-center md:justify-start gap-3">
+                  <Link
+                    to="/connect#report"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-[#B52026] text-white text-sm font-semibold rounded-lg hover:bg-[#8E1A1E] hover:shadow-md active:scale-[0.98] transition-all duration-200 focus-visible:ring-2 focus-visible:ring-[#B52026] focus-visible:ring-offset-2 outline-none"
+                  >
+                    <AlertTriangle className="w-4 h-4" />
+                    File a Complaint
+                  </Link>
+                  <Link
+                    to="/connect"
+                    className="inline-flex items-center gap-2 px-6 py-3 border border-[#B52026]/30 text-[#B52026] text-sm font-semibold rounded-lg hover:bg-[#B52026]/5 active:scale-[0.98] transition-all duration-200 focus-visible:ring-2 focus-visible:ring-[#B52026] focus-visible:ring-offset-2 outline-none"
+                  >
+                    <MessageCircle className="w-4 h-4" />
+                    Make an Enquiry
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CTA Section - Grey and Red accents */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <motion.div
+            {...fadeUp}
+            className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#0A4A13] via-[#117F21] to-[#2E913D] p-8 md:p-12 text-center"
+          >
+            {/* Decorative elements */}
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#CB9615]/10 rounded-full -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#B52026]/10 rounded-full translate-y-1/2 -translate-x-1/2" />
+            <div className="absolute inset-0 opacity-5" style={{
+              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            }} />
+
+            <div className="relative z-10 max-w-xl mx-auto">
+              <MessageCircle className="w-12 h-12 text-[#CB9615] mx-auto mb-4" />
+              <h2 className="text-3xl font-bold text-white mb-3">
+                Need Help with Your Pension?
+              </h2>
+              <p className="text-white/80 mb-8">
+                Our AI-powered assistant is available 24/7 to answer your pension questions. You can also contact us directly through our helpdesk.
+              </p>
+              <div className="flex flex-wrap justify-center gap-4">
+                <button
+                  onClick={() => document.getElementById("chat-trigger")?.click()}
+                  className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#CB9615] text-white font-semibold rounded-lg hover:bg-[#8B6910] hover:shadow-xl active:scale-[0.98] transition-all duration-200 shadow-lg focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A4A13] outline-none cursor-pointer"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  Ask AI Assistant
+                </button>
+                <Link
+                  to="/connect#contact"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white/15 text-white font-semibold rounded-lg hover:bg-white/25 active:scale-[0.98] transition-all duration-200 border border-white/20 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A4A13] outline-none"
+                >
+                  <Phone className="w-5 h-5" />
+                  Contact Helpdesk
+                </Link>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Admin & Mobile App Links */}
+      <section className="py-12 bg-[#F8FAFC] border-t border-gray-200/40">
+        <div className="max-w-7xl mx-auto px-4">
+          <motion.div
+            className="grid md:grid-cols-2 gap-6"
+            {...stagger}
+          >
+            <motion.div {...staggerItem}>
+              <Link
+                to="/admin"
+                className="flex items-center gap-4 p-6 bg-white rounded-2xl border border-gray-200/80 hover:border-[#B52026]/30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 group focus-visible:ring-2 focus-visible:ring-[#B52026] focus-visible:ring-offset-2 outline-none"
+              >
+                <div className="w-14 h-14 rounded-xl bg-[#FDE8E8] flex items-center justify-center shrink-0">
+                  <BarChart3 className="w-7 h-7 text-[#B52026]" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-gray-900 group-hover:text-[#B52026] transition-colors">
+                    CMS Admin Dashboard
+                  </h3>
+                  <p className="text-sm text-gray-500 mt-1">
+                    Analytics, reports, and operator management
+                  </p>
+                </div>
+                <ArrowRight className="w-5 h-5 text-gray-300 group-hover:text-[#B52026] group-hover:translate-x-1 transition-all" />
+              </Link>
+            </motion.div>
+            <motion.div {...staggerItem} transition={{ delay: 0.1 }}>
+              <Link
+                to="/mobile"
+                className="flex items-center gap-4 p-6 bg-white rounded-2xl border border-gray-200/80 hover:border-[#117F21]/30 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 group focus-visible:ring-2 focus-visible:ring-[#117F21] focus-visible:ring-offset-2 outline-none"
+              >
+                <div className="w-14 h-14 rounded-xl bg-[#E8F5E9] flex items-center justify-center shrink-0">
+                  <Smartphone className="w-7 h-7 text-[#117F21]" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-semibold text-gray-900 group-hover:text-[#117F21] transition-colors">
+                    Mobile App Prototype
+                  </h3>
+                  <p className="text-sm text-gray-500 mt-1">
+                    Preview the PenCom mobile application
+                  </p>
+                </div>
+                <ArrowRight className="w-5 h-5 text-gray-300 group-hover:text-[#117F21] group-hover:translate-x-1 transition-all" />
+              </Link>
+            </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* External Portals - Unique icons from data */}
+      <section className="py-12 bg-white border-t border-gray-200/40">
+        <div className="max-w-7xl mx-auto px-4">
+          <motion.div className="text-center mb-8" {...fadeUp}>
+            <h3 className="text-lg font-semibold text-gray-800">Quick Access Portals</h3>
+            <p className="text-sm text-gray-400">Direct links to PenCom external services</p>
+          </motion.div>
+          <motion.div
+            className="flex flex-wrap justify-center gap-4"
+            {...stagger}
+          >
+            {externalPortals.map((portal, i) => (
+              <motion.a
+                key={portal.name}
+                {...staggerItem}
+                transition={{ delay: i * 0.1 }}
+                href={portal.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 px-5 py-3 bg-white border border-gray-200/80 rounded-xl hover:border-[#117F21] hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-[#117F21] focus-visible:ring-offset-2 outline-none"
+              >
+                <div className="w-9 h-9 rounded-lg bg-[#E8F5E9] flex items-center justify-center">
+                  {portal.icon ? portalIcons[portal.icon] : <Newspaper className="w-4 h-4 text-[#117F21]" />}
+                </div>
+                <div>
+                  <div className="text-sm font-semibold text-gray-800">{portal.name}</div>
+                  <div className="text-xs text-gray-400">{portal.description}</div>
+                </div>
+              </motion.a>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+    </div>
+  );
+}

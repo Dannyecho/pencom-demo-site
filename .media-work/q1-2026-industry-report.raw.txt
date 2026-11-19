@@ -1,0 +1,2841 @@
+PenCom - Public
+
+NATIONAL PENSION COMMISSION
+STRONGER PENSIONS, STRONGER NIGERIA
+
+Nigerian Pension Industry
+Quarterly Industry Report
+Q1 2026
+JANUARY - MARCH 2026
+Stability · Coverage · Welfare · Compliance · Investment
+
+Issued by
+
+National Pension Commission
+
+Period
+
+Q1 2026 (1 January – 31 March 2026)
+
+Audience
+
+Board, Executive Committee,
+Pension Operators, Public
+
+Framework
+
+PenCom Insight Framework, aligned with Pension
+Revolution 2.0
+
+Publication
+
+April 2026
+
+National Assembly,
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+THE COMMISSION
+
+Mission and Vision
+MISSION
+
+PenCom exists for the effective regulation and supervision of the Nigerian pension industry
+to ensure that retirement benefits are paid as and when due.
+VISION
+
+To be an efficient regulator that promotes a resilient and sustainable pension industry
+delivering positive and measurable impact for contributors and the economy.
+About this report
+This publication presents the Commission’s consolidated view of the Nigerian pension industry for the
+first quarter of 2026. Analysis is organised around the five outcome domains of the PenCom Insight
+Framework, namely System Stability and Solvency, Member Coverage and Inclusion, Retiree Welfare
+and Adequacy, Compliance and Governance, and Investment Performance and Diversification. The
+framework aligns quarterly reporting with the strategic pillars of Pension Revolution 2.0 and offers a
+coherent picture of where the industry is strong, where it is exposed, and what the Commission intends
+to do next.
+The data underpinning this report is drawn from the Commission’s regulatory returns, complemented
+by macroeconomic and capital market indicators from the Central Bank of Nigeria, the National Bureau
+of Statistics, the Nigerian Exchange Group, FMDQ, the International Monetary Fund and the World
+Bank. Where interpretation is offered, it reflects the working position of the Commission at the time of
+publication.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 2 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+NAVIGATION
+
+Contents
+01 Executive Dashboard ................................................................................................................. 05
+02 Director General’s Read ............................................................................................................ 07
+03 Risk Heatmap and Register ...................................................................................................... 10
+04 Domain A. System Stability and Solvency .............................................................................. 13
+A.1 Industry assets crossed ₦29 trillion ................................................................................................ 13
+A.2 Asset allocation and diversification ................................................................................................. 14
+A.3 Industry concentration and top operators....................................................................................... 15
+
+05 Domain B. Member Coverage and Inclusion.......................................................................... 16
+B.1 Formal CPS membership reached 11.18 million .......................................................................... 16
+B.2 The Personal Pension Plan, coverage and conversion ............................................................... 17
+B.3 Subnational CPS adoption, the picture is shifting ......................................................................... 18
+B.4 RSA transfers and data recapture ................................................................................................... 19
+
+06 Domain C. Retiree Welfare and Adequacy ............................................................................. 20
+C.1 Benefit administration at a glance ................................................................................................... 20
+C.2 Accrued rights, closing legacy obligations ..................................................................................... 22
+C.3 Defined Benefits Scheme, PTAD .................................................................................................... 22
+C.4 NSITF legacy administration ............................................................................................................ 22
+
+07 Domain D. Compliance and Governance ............................................................................... 24
+D.1 Compliance enforcement is delivering ........................................................................................... 24
+D.2 Surveillance of Licensed Pension Fund Operators ...................................................................... 24
+D.3 PCRS rollout and digital compliance .............................................................................................. 25
+D.4 Stakeholder engagement and State activities ............................................................................... 25
+
+08 Domain E. Investment Performance and Diversification ...................................................... 27
+E.1 Headline performance....................................................................................................................... 27
+E.2 Sources of portfolio growth .............................................................................................................. 28
+E.3 CPFA and AES portfolios ................................................................................................................. 28
+
+09 Operating Environment .............................................................................................................. 30
+10 Forward-Looking Indicators and Outlook for Q2 2026 .......................................................... 31
+11 Strategic Priorities for Q2 2026 ................................................................................................ 33
+12 Statistical Annex ......................................................................................................................... 35
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 3 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+01. EXECUTIVE DASHBOARD
+
+Q1 2026 at a Glance
+The Nigerian pension industry entered 2026 on a stronger footing. Assets under regulation crossed
+the ₦29 trillion mark for the first time, benefit administration remained on track, and every principal
+reform track continued to move forward under the Pension Revolution 2.0 agenda. Two structural
+themes carry into Q2. First, coverage across the informal sector remains shallow: registrations are
+climbing but conversion of registered participants into active contributors remains low. Second, the
+industry’s asset base is still heavily concentrated in Federal Government securities, and the revised
+investment guidelines will need to translate into observable diversification over the coming quarters.
+PENSION ASSETS
+(NAV)
+
+Q1
+CONTRIBUTIONS
+
+₦29.52 tn
+
+₦559.4 bn
+
++7.53% vs Q4 2025
+Equity revaluation of
+₦1.50 trillion drove the
+bulk of the growth.
+
+Public 50.9% · Private
+49.1%
+Moderation from Q4’s
+₦903.7 billion, itself
+elevated by public sector
+arrears.
+
+ON TRACK
+
+NEW RSAS (Q1)
+
+143,248
+75.31% under age 40
+Cumulative RSAs of
+11.18 million, up +24.7%
+on prior quarter.
+
+ACCRUED RIGHTS
+PAID
+
+₦11.19 bn
+
+IMPROVING
+
+4,592 beneficiaries
+FGN-funded legacy
+obligations continue to be
+honoured on schedule.
+ON TRACK
+
+ON TRACK
+REAL RETURN
+(36-MONTH)
+
+PPP FUNDING
+RATIO
+
+STATES FULLY
+COMPLIANT
+
+EMPLOYER
+RECOVERIES
+
+Improving
+
+8.58%
+
+8 / 37
+
+₦1.18 bn
+
+18,811 funded of
+219,316 RSAs
+
+From 15 defaulters in
+Q1
+
+Registrations grew but
+funded share moved only
+marginally.
+
+25 with CPS legislation
+now
+Katsina switched from
+CDBS to CPS during the
+quarter, a first for 2026.
+
+CRITICAL
+
+IMPROVING
+
+STRONG QUARTER
+
+Funds I, II, VI Active
+now above CPI
+Full-index gap to 15.38%
+inflation narrowed
+materially in Q1.
+WATCH
+
+Cumulative recoveries
+since June 2012 now
+stand at ₦33.80 billion.
+
+Status by outcome domain
+Domain
+
+Q1 Status
+
+Headline read
+
+A. Stability
+
+Stable
+
+Asset base past ₦29.52 trillion, driven by equity
+revaluation and disciplined contribution flow.
+
+B. Coverage
+
+Mixed
+
+CPS membership expanding at pace; Personal
+Pension Plan funding gap remains the binding
+constraint.
+
+C. Welfare
+
+Stable
+
+Approximately 21,600 retirees served in the quarter;
+₦11.19 billion in accrued rights settled.
+
+D. Compliance
+
+Improving
+
+e-PCC issuance more than doubled; ICPC
+collaboration commenced for recalcitrant defaulters.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 4 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+E. Investment
+
+Watch
+
+Stronger Pensions, Stronger Nigeria
+
+Real returns trajectory clearly positive; FGN
+concentration at 58.07% now the diversification
+priority.
+
+Source: PenCom regulatory returns; CBN; NBS; NGX; FMDQ; IMF; World Bank. Position as at 31 March 2026.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 5 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+02. DIRECTOR GENERAL’S READ
+
+The Quarter in Perspective
+
+HEADLINE, Q1 2026
+
+The pension industry opened 2026 on the front foot. Net assets crossed ₦29 trillion,
+contributions of ₦559.42 billion were healthy in the wake of an exceptional Q4, and benefit
+administration continued to discharge every category of claim on time. The Commission
+progressed the digital, governance and inclusion agenda set out under Pension Revolution
+2.0, and issued the addendum to the investment regulations that will govern portfolio
+construction from Q2 forward.
+Two structural questions carry forward. First, 91% of Personal Pension Plan accounts
+remain unfunded; registration numbers are not a proxy for savings, and the coverage
+story of 2026 will be told in funded ratios rather than counts. Second, the concentration of
+assets in Federal Government securities at 58.07% is the ceiling on real returns over the
+long horizon. The revised investment guidelines now provide the instrument set; the next
+four quarters will show whether the Pension Fund Administrators use it.
+
+What is working
+▪ Asset accumulation held its pace. Net Asset Value reached ₦29.52 trillion at the end of March,
+an increase of ₦2.07 trillion in the quarter, driven mainly by a 38.09% appreciation in domestic
+equities.
+▪ Compliance enforcement widened. The Commission recovered ₦1.18 billion from 15 defaulting
+employers, comprising ₦450 million in principal contributions and ₦729 million in penalties, and
+formally engaged the Independent Corrupt Practices and Other Related Offences Commission on
+recalcitrant cases, with six employers already interrogated.
+▪ Digital compliance scaled sharply. The Commission issued 12,185 electronic Pension
+Clearance Certificates in the quarter, covering ₦212.63 billion in remitted contributions for 199,481
+employees, roughly two and a half times the volume issued in Q4 2025.
+▪ Legacy obligations are being closed. The Federal Government paid ₦11.19 billion in accrued
+rights to 4,592 retirees and deceased contributors, and the Contribution and Bond Redemption
+Application continues to automate the underlying workflow.
+▪ Homeownership access is scaling. 28,437 contributors accessed ₦92.70 billion in equity
+contributions for residential mortgages under Section 89(2), a step change on the preceding
+quarter and the clearest signal so far that the framework is being adopted at scale.
+
+What is at risk
+▪ Personal Pension Plan funding gap. Of the 219,316 accounts registered under the PPP, only
+18,811 are funded. The industry has spent a full year measuring inclusion in registrations rather
+than savings, and the pattern is now entrenched. Absent a decisive change in operator conduct
+and product design, the Q4 2026 funded ratio target of 30% will not be achieved.
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 6 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+▪ Real returns still below inflation on the headline index. Funds I, II and VI Active moved above
+inflation on the 36-month window in the quarter, but the aggregate industry return is still short of
+the 15.38% headline rate. Delivery on the revised investment guidelines is now the operative
+variable.
+▪ Subnational adoption still uneven. Katsina State’s legislative migration from CDBS to CPS is
+genuine progress and takes the count of States with CPS legislation to 25. Fully compliant States,
+however, remain at 8 of 37, and Kano State continues to hold pension funds with commercial
+banks rather than licensed Pension Fund Administrators.
+▪ Industry concentration in registrations. The top five Pension Fund Administrators accounted
+for over 54% of new RSA registrations in the quarter, and Stanbic IBTC alone accounted for
+17.47%. Concentration is not in itself a stability risk, but it raises questions of competitive intensity
+in the lower tier of the market.
+▪ Data recapture pace. Cumulative recapture stood at 17.03% at the end of Q1, up marginally from
+16.36% at the end of Q4. At this run rate the exercise will not close within the current planning
+horizon, and Q2 must set operator-level quarterly targets.
+
+What we will do
+▪ Reset the Personal Pension Plan playbook. The Commission will publish funding-conversion
+targets at PFO level, activate the Accredited Pension Agent network at scale, and deepen
+distribution partnerships with cooperatives, fintechs, telecommunications operators, trade unions
+and professional associations to move the informal sector from registration to sustained
+contribution.
+▪ Commence the Minimum Pension Guarantee. Beneficiary identification, funding arrangements
+and payment modalities for eligible retirees will be concluded in Q2, in tandem with the introduction
+of affordable health-insurance arrangements in partnership with Health Maintenance
+Organisations and the National Health Insurance Authority.
+▪ Convene a States Compliance Roundtable. The Pension Contribution Remittance System and
+the planned Subnational CPS Adoption Index will anchor the Q2 engagement with the seventeen
+States that have passed the law but not yet moved to implementation.
+▪ Tighten operator conduct through enforcement. The Commission will publish a Compliance
+Effectiveness Index in Q2, combining recovery rates, e-PCC turnaround, and complaint resolution
+speed, so that compliance can be measured as an outcome rather than a process.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 7 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+03. RISK LANDSCAPE
+
+Risk Heatmap and Register
+The Q1 2026 supervisory risk picture reflects a system whose principal exposures are no longer
+prudential in nature but structural. Solvency, capital adequacy and operator liquidity all remain sound.
+The binding constraints on the industry now sit around whether members are saving enough
+(coverage), whether real returns are keeping pace with inflation (adequacy), and whether subnational
+adoption converts from law to live implementation. The heatmap below expresses that shift; the
+register that follows records the Commission’s working position on each risk.
+
+Risk heatmap
+Very Low
+
+Low
+
+Moderate
+
+High
+
+Very High
+
+VERY HIGH
+
+R4
+
+R2
+
+HIGH
+
+R7
+
+R3
+
+R1
+
+MODERATE
+
+R5
+
+R6
+
+R9
+
+LOW
+
+R8
+
+VERY LOW
+
+Likelihood on the vertical axis; impact on the horizontal axis. Cell shading intensifies with combined severity. Risk
+identifiers are keyed to the register below.
+
+Risk register
+ID
+
+Risk
+
+Lead mitigant
+
+R1
+
+Real returns below inflation
+across the RSA Funds on the
+36-month window.
+
+Revised investment guidelines now in
+force. PFAs to submit recalibration
+strategy notes covering alternatives,
+infrastructure, and inflation-linked
+instruments during Q2.
+
+R2
+
+91% of Personal Pension Plan
+accounts hold no contribution.
+
+Accredited Pension Agent framework, bimonthly contingent withdrawal feature,
+published funding-conversion targets at
+PFO level.
+
+New
+
+R3
+
+Federal Government
+securities at 58.07% of total
+NAV.
+
+Phased increase in alternatives, REITs,
+and infrastructure within prudential limits
+under the revised guidelines.
+
+Watch
+
+R4
+
+Macroeconomic volatility
+across inflation, foreign
+exchange and oil receipts.
+
+Embedded stress testing, portfolio
+rebalancing, and macro scenario analysis
+within the supervisory cycle.
+
+Stable
+
+R5
+
+Subnational CPS adoption
+uneven; 8 States fully
+
+States Consultative Forum, PCRS rollout,
+targeted bilateral engagement, and the
+
+Improving
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Trend
+
+Improving
+
+Page 8 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+compliant of 37; Kano funds
+held outside licensed PFAs.
+
+planned Subnational CPS Adoption
+Index.
+
+R6
+
+Concentration: top 5 PFAs
+hold 54.4% of new RSAs in
+Q1.
+
+Market discipline through published PFA
+performance review and a public conduct
+scorecard.
+
+Stable
+
+R7
+
+Only 17.03% of legacy RSAs
+recaptured.
+
+Digital recapture push, PFO-level
+quarterly targets, sanctions for material
+under-performance.
+
+Improving
+
+R8
+
+Enforcement dependency on
+41 external Recovery Agents.
+
+Build in-house risk-based employer
+monitoring capability; ICPC collaboration
+for recalcitrant cases now activated.
+
+Improving
+
+R9
+
+Cyber and operational
+resilience of Pension Fund
+Operators.
+
+PFO operational risk reviews; ICT
+supervisory framework and periodic
+penetration testing.
+
+Watch
+
+FURTHER INSIGHT
+
+Three of the top four risks (R1, R2 and R5) are coverage and adequacy risks rather than
+conduct or solvency risks. The message for the 2026 supervisory work plan is clear. The
+binding constraints on the industry sit outside prudential territory. They concern whether
+members are saving enough, whether the assets they save are earning enough after
+inflation, and whether coverage genuinely reaches beyond Abuja and the coastal states.
+Supervisory attention and reform energy should be calibrated accordingly.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 9 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+04. DOMAIN A
+
+System Stability and Solvency
+
+P R O T E C T I N G T H E S Y S T E M . The pension system must be financially
+sound, well diversified, and resilient to economic shocks if it is to deliver on its promise to
+members across the long horizon.
+
+A.1
+
+Industry assets crossed the ₦29 trillion mark
+
+Net Asset Value across the industry rose from ₦27.45 trillion at 31 December 2025 to ₦29.52 trillion
+at 31 March 2026, an increase of ₦2.07 trillion or 7.53%. Growth was concentrated in the RSA Active
+Funds, whose combined balance expanded by ₦1.78 trillion (9.27%) as a strong equity revaluation
+cycle drove up domestic quoted holdings. The RSA Retiree Funds added ₦100.43 billion (4.43%), the
+Approved Existing Schemes gained ₦147.51 billion (4.49%), and the Closed Pension Fund
+Administrators recovered to ₦2.74 trillion following FX-related weakness in Q4.
+
+Q4 2025 (₦ tn)
+
+Q1 2026 (₦ tn)
+
+Change
+
+Share of
+NAV
+
+RSA Active Funds (I, II, III, V, VI
+Active)
+
+19.19
+
+20.97
+
++9.27%
+
+71.03%
+
+RSA Retiree Funds (IV, VI Retiree)
+
+2.27
+
+2.37
+
++4.43%
+
+8.03%
+
+Closed Pension Fund
+Administrators (CPFA)
+
+2.69
+
+2.74
+
++1.70%
+
+9.28%
+
+Approved Existing Schemes (AES)
+
+3.28
+
+3.43
+
++4.49%
+
+11.66%
+
+Industry total
+
+27.45
+
+29.52
+
++7.53%
+
+100.00%
+
+Component
+
+FURTHER INSIGHT
+
+The RSA Active Funds together represent 71.03% of the industry, and their 9.27% quarterly
+gain drove the aggregate move. Two dynamics matter for interpretation. First, growth was
+overwhelmingly a revaluation gain: the value of domestic quoted equities alone rose by
+₦1.50 trillion in the quarter, well above the contribution flow. Second, the Retiree Fund
+continues to expand as new retirees transition off the Active books; ₦1.09 trillion moved
+from the Active Funds into the Retiree Fund and toward 25% unemployment benefit
+settlements during the period.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 10 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+A.2
+
+Stronger Pensions, Stronger Nigeria
+
+Asset allocation, the diversification question
+
+The composition of the pension portfolio at 31 March 2026 reflects an industry that continues to build
+its resilience around Federal Government paper, and that has now begun, if only tentatively, to test
+the wider instrument set. Federal Government securities in aggregate account for 58.07% of NAV, a
+modest reduction on the 59.50% seen at year-end. Domestic equities have expanded from 14.41% to
+18.50% on the strength of the equity rally. Alternative asset classes now stand at 3.95% and include a
+materially stronger allocation to mutual funds, private equity, real estate and REITs.
+
+Asset class
+
+Share (%)
+
+Comment
+
+Federal Government securities
+(total)
+
+58.07
+
+FGN Bonds 54.00%, Treasury Bills 3.59%,
+Agency, Sukuk and Green Bonds 0.48%.
+
+Domestic and foreign equities
+
+19.34
+
+Domestic 18.50% (₦5.46 trillion, up
+38.09%); foreign equities 0.84%.
+
+Money market instruments
+
+8.83
+
+Liquidity buffer supporting benefit payments
+and short-end carry.
+
+Corporate debt securities
+
+7.62
+
+Selective, high grade corporate exposure.
+
+Alternative assets and real estate
+
+3.95
+
+Infrastructure, private equity, REITs, mutual
+funds; mutual funds up 47.84% in the
+quarter.
+
+State Government securities
+
+1.26
+
+Lagos bond exposure continues to advance.
+
+Other assets and cash
+
+0.93
+
+Residual liquidity.
+
+FURTHER INSIGHT
+
+The FGN allocation continues to preserve capital and generate stable carry, but it also caps
+the ability of the system to deliver inflation-beating returns over the long horizon. Movement
+in the alternatives allocation, up 47.84% in mutual funds and 8.76% in private equity within
+the quarter, is early evidence that the revised investment guidelines are beginning to
+influence portfolio construction. The Commission expects this trend to accelerate as PFAs
+recalibrate strategies during Q2 and Q3 under the addendum to the Regulations on
+Investment of Pension Fund Assets issued in December 2025.
+
+A.3
+
+Industry structure and operator concentration
+
+RSA Fund II, the default fund under the Multi-Fund Structure, continues to anchor the system,
+accounting for 53.94% of RSA Active Funds. Fund III accounts for 32.24%. This concentration is a
+feature of the default allocation rather than of active member choice; it deserves supervisory attention
+because a large cohort of contributors with long horizons is being defaulted into a fund whose risk
+profile may be more conservative than their savings horizon warrants.
+Among Pension Fund Administrators, the top five accounted for 54.41% of new RSA registrations in
+Q1, a mild reduction on the 62.11% seen in Q4 2025, but concentration remains elevated. Stanbic
+IBTC Pension Managers led the industry with 25,024 new registrations (17.47%), followed by
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 11 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+AccessARM (10.63%), FCMB Pensions (10.15%), TangerineAPT (9.65%) and Trustfund (6.73%).
+Competition is intensifying in the mid-tier, and TangerineAPT’s emergence into the top five is a signal
+that the market is not settled.
+FURTHER INSIGHT
+
+Two supervisory questions arise from the concentration picture. First, whether competitive
+intensity in the lower tier of the market is sufficient to drive product innovation and service
+quality improvements. Second, whether the default-fund concentration in RSA Fund II is
+producing risk-appropriate outcomes for the 39.03% of new contributors who are under
+thirty years of age and whose retirement horizon extends well beyond 2055. Both questions
+belong on the 2026 supervisory work plan.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 12 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+05. DOMAIN B
+
+Member Coverage and Inclusion
+
+R E A C H I N G E V E R Y N I G E R I A N . Pension reform succeeds only when it
+reaches the right Nigerians in the right numbers, across both the formal economy and the
+much larger informal sector.
+
+B.1
+
+Formal CPS membership reached 11.18 million
+
+Cumulative RSA registrations rose from 11,040,227 at the end of Q4 2025 to 11,183,475 at the end
+of Q1 2026, on the back of 143,248 new accounts opened during the quarter. The quarterly cadence
+is materially stronger than the 114,864 opened in Q4, and reflects both improved digital onboarding
+and sustained public sensitisation. Active membership now corresponds to approximately 12.1% of
+Nigeria’s estimated 92 million labour force, leaving substantial headroom for growth, particularly in the
+informal sector.
+
+Demographic composition is favourable
+Cohort
+
+New RSAs Q1
+
+Share
+
+Implication
+
+Under 30 years
+
+57,256
+
+39.97%
+
+Long-horizon contributor base; core supply
+of the pension system.
+
+30 to 39 years
+
+50,622
+
+35.34%
+
+Peak earning years; highest contribution
+potential.
+
+40 to 49 years
+
+26,334
+
+18.38%
+
+Mid-career; steady contribution profile.
+
+50 years and above
+
+9,036
+
+6.31%
+
+Limited remaining accumulation horizon;
+retirement planning already active.
+
+On gender, female registrations accounted for 44.08% of the Q1 cohort and male registrations for
+55.92%. This continues the trend of steadily narrowing gender disparity in pension enrolment,
+consistent with rising female workforce participation and sustained sensitisation targeted at broader
+inclusion.
+FURTHER INSIGHT
+
+75.31% of new RSAs in Q1 were opened by Nigerians under forty years old. This remains
+the single most important long-term asset of the system: a young, expanding contributor
+base whose retirement horizon extends beyond 2055. Investment policy should be
+calibrated to this reality. Long horizons justify, and indeed require, more risk-bearing
+capacity than the current 58.07% allocation to Federal Government securities reflects. The
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 13 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+Q2 challenge for the Investment Supervision function is to align the default-fund glide path
+with the emerging demographic profile.
+
+B.2
+
+Personal Pension Plan, registrations are not savings
+
+The Personal Pension Plan reached 219,316 cumulative registrations at 31 March 2026, with 7,452
+new registrations added during Q1. Only 18,811 of these accounts, or 8.58% of the registered base,
+are funded. Quarterly contributions totalled ₦147.16 million across all participants, and cumulative
+inflows since the scheme’s inception now stand at ₦1.66 billion. A total of 15 Personal Pension
+Contributors withdrew ₦11.12 million during the quarter under the contingent withdrawal window.
+
+Operator
+
+Cumulative PPP
+RSAs
+
+Funded ratio
+
+AccessARM Pensions
+
+Dominant (52.4% of
+cumulative PPP)
+
+Low
+
+Volume leader;
+conversion gap
+remains the issue.
+
+Stanbic IBTC Pension
+Managers
+
+16.8% cumulative
+share
+
+Low
+
+Strong scale;
+distribution channels
+under-leveraged.
+
+Fidelity Pension Managers
+
+2,015 RSAs
+
+87% funded
+
+Best-in-class
+conversion ratio.
+
+Guaranty Trust Pensions
+
+2,254 RSAs
+
+54% funded
+
+Above-average
+funding behaviour.
+
+FCMB Pensions
+
+14,424 RSAs
+
+32% funded
+
+Above-average;
+scaling on the back
+of Q1 registrations.
+
+Veritas Glanvills
+
+4,455 RSAs
+
+30% funded
+
+Above-average
+funding behaviour.
+
+8.58% funded
+
+Inclusion still
+measured in
+registrations, not
+savings.
+
+219,316 total
+
+Industry average
+
+Read
+
+FURTHER INSIGHT
+
+Two findings reframe the inclusion strategy for Q2. First, Fidelity’s 87% funding ratio
+demonstrates that high conversion is achievable within the current product design; the
+binding constraint is operator distribution and product configuration, not informal-sector
+behaviour. Second, the gap between AccessARM’s volume leadership and its low funded
+ratio confirms that registration without funding is creating a misleading picture of inclusion.
+The Commission will publish funding-conversion targets at PFO level during Q2, and will
+require the top-two operators by cumulative PPP volume to submit conversion strategies
+alongside their next quarterly returns.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 14 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+B.3
+
+Stronger Pensions, Stronger Nigeria
+
+Subnational CPS adoption, a genuine break in the pattern
+
+Q1 recorded the first meaningful movement in the subnational adoption picture in four quarters.
+Katsina State amended its pension law from a Contributory Defined Benefits Scheme to the
+Contributory Pension Scheme, taking the number of States with CPS legislation to twenty-five, from
+twenty-four at year-end. The number of States operating under CDBS legislation correspondingly
+declined to six, of which only Jigawa and Kano are still actively implementing.
+Fully compliant States, those that have passed the law and are actively implementing under a licensed
+PFA architecture, remain at eight. A further seventeen have passed legislation but have not yet moved
+to implementation, and they now constitute the principal focus of the Commission’s bilateral
+engagement. Kano State continues to hold its pension funds with commercial banks rather than under
+a licensed Pension Fund Administrator, and requires a separate, dedicated regulatory pathway.
+
+Adoption status
+
+Count
+
+Fully compliant, operating
+CPS
+
+Law passed,
+implementation not yet
+commenced
+
+8
+
+17
+
+Status
+
+Notes and examples
+
+Green
+
+Includes Lagos, Kaduna, Edo. Ogun
+advancing on Retirement Benefits Bond
+Redemption Fund Account and an
+actuarial valuation during Q1.
+
+Amber
+
+Principal focus for bilateral engagement
+in 2026. States require PCRS
+deployment, Bureau establishment, and
+PFA appointment.
+
+Active CDBS
+implementation
+
+2
+
+Amber
+
+Jigawa and Kano operating under
+CDBS. Zamfara has initiated CDBS-toCPS transition discussions with the
+Commission.
+
+Non-compliant
+arrangement
+
+1
+
+Red
+
+Kano State, pension funds still held with
+commercial banks rather than licensed
+PFAs.
+
+Amber
+
+Ekiti (re-run actuarial valuation), Ondo
+(Pension Reform Law amended for PCC
+and ISPO framework), Kebbi (CPS
+repealed and re-enacted for CDBS),
+Anambra (repeal and re-enact in
+progress), Katsina (transitioning under
+3D Model), Ekiti and Bayelsa
+progressing.
+
+Other jurisdictions (early
+stage, transitioning)
+
+9
+
+Notable Q1 engagements included Ogun State’s commencement of steps toward opening its
+Retirement Benefits Bond Redemption Fund Account alongside an actuarial valuation, Zamfara
+State’s formal discussions on transitioning from CDBS to CPS through the phased 3D Model, and
+Ondo State’s amendment of its Pension Reform Law to introduce PCC compliance for contract awards
+and the Irrevocable Standing Payment Order framework. Technical support was extended to the
+Lagos State Pension Commission on pension increase computations, and a virtual capacity-building
+programme was delivered for the Bayelsa State Pension Board.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 15 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+FURTHER INSIGHT
+
+The seventeen States that have passed legislation but have not yet moved to
+implementation are the most actionable subnational segment for 2026. They are not a legal
+obstacle; the law exists. What is missing is operational follow-through. A targeted bilateral
+programme, anchored on the Pension Contribution Remittance System and the planned
+Subnational CPS Adoption Index, can convert legislation into live coverage within eighteen
+months. The Kano position requires separate, dedicated engagement to bring the State’s
+pension funds under licensed PFA architecture.
+
+B.4
+
+RSA transfers and data recapture
+
+The Fourth RSA Transfer Quarter of 2025 was executed in the second week of January 2026,
+comprising 19,969 transfer requests worth ₦153.31 billion in associated assets. For the First Transfer
+Quarter of 2026, a total of 32,796 transfer requests have been received to date, inclusive of the 12,653
+lodged in December 2025. These will be executed in the first week of April 2026, with the balance
+from March scheduled for the second-quarter batch.
+On data recapture, 58,220 RSAs were recaptured in Q1, bringing the cumulative total since inception
+to 1,485,052, or 17.03% of the industry’s 8,722,609 legacy client base. Q1 activity was more
+distributed across the industry than in Q4. Norrenberger Pensions led the quarter with 17,157
+recaptures (29.47%), followed by Stanbic IBTC with 10,963 (18.83%), Veritas Glanvills with 6,328
+(10.87%), Guaranty Trust with 3,918 (6.73%) and FCMB Pensions with 3,888 (6.68%).
+FURTHER INSIGHT
+
+At the current run rate, completing the legacy recapture would take more than twenty-five
+quarters. The exercise must move from being PFA-paced to being PenCom-paced. The
+Commission will introduce PFO-level quarterly recapture targets, publish quarterly progress
+reports, and impose regulatory sanctions on operators that materially under-perform against
+target during 2026.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 16 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+06. DOMAIN C
+
+Retiree Welfare and Adequacy
+
+D E L I V E R I N G T H E P R O M I S E . The ultimate test of the pension system is
+whether retirees and beneficiaries receive adequate, timely and dignified payments every
+month, without exception.
+
+C.1
+
+Benefit administration at a glance
+
+A total of approximately 21,600 retirees and beneficiaries were approved for benefits during Q1 2026,
+drawing on ₦205 billion in lump sums, annuity premiums and monthly obligations. The composition of
+approvals confirms a resilient benefit administration architecture, and highlights two behavioural
+patterns of interest to the supervisory function.
+
+Benefit type
+
+Approvals
+
+Amount (₦ bn)
+
+Public share
+
+Comment
+
+Programmed
+Withdrawal
+
+6,368
+
+39.26 lump; 0.82
+monthly
+
+63.87%
+
+Federal retirees
+dominant.
+
+Retiree Life Annuity
+
+4,064
+
+20.23 lump; 44.40
+premium
+
+77.46%
+
+Confidence in
+annuity model
+sustained.
+
+Death Benefits
+
+2,162
+
+19.08
+
+54.86%
+
+Protection function
+stable.
+
+En bloc payments
+
+8,609
+
+11.97
+
+11.30%
+
+Below-threshold
+RSAs; private
+sector dominant.
+
+25% withdrawal
+(unemployment)
+
+7,812
+
+10.72
+
+4.36%
+
+96% private
+sector; labour
+market signal.
+
+Mortgage equity
+contribution
+
+28,437
+
+92.70
+
+79.52%
+
+Section 89(2);
+major growth on
+the quarter.
+
+Voluntary contribution
+access
+
+2,113
+
+9.91
+
+25.32%
+
+Financial flexibility
+utilised across
+sectors.
+
+34
+
+1.72
+
+5.88%
+
+Legacy obligation
+closure ongoing.
+
+Pre-Act and NSITF
+settlement
+
+FURTHER INSIGHT
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 17 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+Two patterns deserve supervisory attention. First, en bloc payments at 8,609 approvals
+(88.70% private sector) point to a persistent population whose RSA balances remain
+insufficient to fund a meaningful monthly pension. The underlying issue is contribution
+adequacy over the working life, not benefit design at retirement. Second, the surge in
+mortgage equity contributions to 28,437 approvals worth ₦92.70 billion, up sharply from Q4,
+marks the maturing of Section 89(2) as a mainstream feature of the CPS. The 79.52% public
+sector share reflects the federal payroll infrastructure. Extending equivalent access to
+private sector contributors through improved lender integration is a priority for the Financial
+Inclusion team in Q2.
+
+C.2
+
+Accrued rights, closing legacy obligations
+
+The Federal Government continued to honour its accrued rights obligations for service rendered
+before the commencement of the Contributory Pension Scheme in 2004. During Q1 2026, ₦11.19
+billion was paid to 4,592 active retirees and deceased employees, remitted by the Central Bank of
+Nigeria into beneficiaries’ RSAs alongside their accumulated contributions. The Contribution and
+Bond Redemption Application (COBRA) continues to automate the underlying workflow, streamlining
+verification, approval and payment across the pipeline.
+FURTHER INSIGHT
+
+Accrued rights settlement is the most visible signal of Federal commitment to the pension
+reform. Sustaining the appropriation across successive budgets, and broadening the
+framework to cover State-level legacy claims, would be the single most impactful policy
+lever for retiree welfare in 2026. The Minimum Pension Guarantee, whose phased
+implementation begins in Q2, will further underpin this welfare posture, particularly for
+retirees whose contribution histories fall short of adequacy thresholds.
+
+C.3
+
+Defined Benefits Scheme, PTAD
+
+The Pension Transitional Arrangement Directorate (PTAD) administers pensions for retirees from the
+pre-CPS Defined Benefits Scheme. PTAD’s statutory returns for January, February and March 2026
+reported ₦40.26 billion utilised for pension payments to approximately 169,453 pensioners during the
+quarter. Five DBS complaints were received; three were resolved within the quarter and two remained
+outstanding at 31 March, both of which are being progressed under the Commission’s standard
+escalation protocol.
+
+C.4
+
+NSITF legacy administration
+
+Activity
+
+Q1 2026
+
+Beneficiaries
+
+Cumulative since
+inception
+
+NSITF transfers approved
+(Trustfund)
+
+₦5.01 million
+
+75 contributors
+
+Ongoing settlement.
+
+NSITF benefit payments
+
+₦678,026.13
+
+17 contributors
+
+Fully disbursed within
+quarter.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 18 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+NSITF monthly pensions
+disbursed
+
+₦368.20 million
+
+1,574
+pensioners
+
+₦10.96 billion since
+2006.
+
+Reinstated pensioners and
+arrears
+
+₦5.03 billion
+
+677 pensioners
+
+Includes backpayments settled in
+Q1.
+
+Federal Government
+remittances (FGN MDAs)
+
+₦688.90 million
+
+4,742
+employees
+
+₦1.46 trillion for
+3,016,964 employees.
+
+FURTHER INSIGHT
+
+Legacy schemes (NSITF, Pre-Act, and PTAD-administered DBS) together represent a
+significant administrative load that does not generate new pension assets. Continued
+operational discipline keeps these obligations in good standing while the contributory
+architecture matures. The reinstatement of 677 pensioners and the associated ₦5.03 billion
+in arrears payments during the quarter is particularly notable, illustrating that the
+Commission’s remediation processes continue to catch and resolve legacy anomalies as
+they surface.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 19 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+07. DOMAIN D
+
+Compliance and Governance
+
+P R O T E C T I N G T R U S T . Operator and employer compliance is the foundation
+of trust in the Contributory Pension Scheme; effective enforcement protects every
+contributor’s retirement.
+
+D.1
+
+Compliance enforcement continues to deliver
+
+Enforcement activity stepped up materially in Q1 2026. The Commission issued 12,185 electronic
+Pension Clearance Certificates during the quarter, covering ₦212.63 billion in remitted contributions
+for 199,481 employees, roughly two and a half times the volume issued in Q4 2025. Recovery activity
+was equally robust: ₦1.18 billion was recovered from 15 defaulting employers, split ₦450 million in
+principal contributions and ₦729 million in penalties. Cumulative recoveries since the recovery
+framework commenced in June 2012 now stand at ₦33.80 billion.
+A significant strategic development during the quarter was the commencement of formal collaboration
+with the Independent Corrupt Practices and Other Related Offences Commission (ICPC). Six
+defaulting employers were invited and interrogated by the ICPC investigative team, with Commission
+representatives in attendance. This partnership expands the enforcement toolkit beyond the Recovery
+Agent framework and signals to the market that recalcitrant conduct will attract graduated
+consequences.
+
+Enforcement metric
+
+Q1 2026
+
+Cumulative
+
+e-PCCs issued to compliant employers
+
+12,185
+
+Not tracked
+cumulatively
+
+Contributions remitted under e-PCC
+issuance
+
+₦212.63 bn for 199,481
+employees
+
+Not tracked
+cumulatively
+
+Recoveries from defaulting employers
+
+₦1.18 bn (15 employers)
+
+₦33.80 bn since
+June 2012
+
+of which principal contributions
+
+₦450 million
+
+₦16.50 bn
+
+of which penalties
+
+₦729 million
+
+₦17.30 bn
+
+Active Recovery Agents engaged
+
+41
+
+Continuously
+renewed
+
+ICPC-referred employers interrogated
+
+6
+
+New framework
+activated in Q1
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 20 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+FURTHER INSIGHT
+
+Cumulative recoveries of ₦33.80 billion demonstrate the efficacy of the recovery framework,
+and the surge in e-PCC issuance shows that the digital compliance layer is now doing
+meaningful work in the market. The dependency on 41 external Recovery Agents remains
+a structural feature. Q2 should map the build-up of in-house risk-based employer monitoring
+capability. This would permit more targeted enforcement, reduce variable cost-to-recovery,
+and pair the ICPC referral pathway with a stronger internal analytics capability.
+
+D.2
+
+Surveillance of Licensed Pension Fund Operators
+
+The Commission progressed the 2025 Routine Examination cycle for Licensed Pension Fund
+Operators through the issuance of draft reports, presentation of examination findings to Boards of
+Directors, and the issuance of final examination reports. Draft Routine Examination Reports were
+issued to ten operators. Board presentations were made to Guaranty Trust Pension Managers, Veritas
+Glanvills, Stanbic IBTC, Leadway Pensure and Oak Pensions. Final Routine Examination Reports
+were issued to AccessARM Pensions, TotalEnergies EP Nigeria CPFA, and Progress Trust CPFA.
+During the quarter, the Commission also reviewed and approved the appointment of six qualified
+individuals to executive positions across five Pension Fund Operators, with fit-and-proper
+assessments conducted in line with the Pension Reform Act 2014. The routine examination process
+remains the principal supervisory tool for assessing the financial condition, governance, internal
+controls, risk management and regulatory compliance of operators.
+Regulatory instruments issued in Q1
+▪ Circular on Appointment of External Auditors and Actuaries for Approved Existing Schemes and
+Additional Benefits Schemes.
+▪ Circular on Fees on the Foreign Currency Contribution Fund (Fund VIII).
+▪ Circular for Fund V, VII and Accredited Pension Agent fees.
+▪ Circular on the Categorisation of Contributions under the Personal Pension Plan.
+▪ Circular on Revised Documentation for Data Recapture.
+▪ Guidelines for Verification and Enrolment of Prospective Retirees.
+▪ Addendum to the Revised Regulations on Investment of Pension Fund Assets.
+
+D.3
+
+PCRS rollout and digital compliance
+
+The Pension Contribution Remittance System (PCRS) is the Commission’s electronic platform for
+automating employer contribution remittances, replacing manual schedule submissions with online
+uploads through approved Payment Solution Service Providers. Sensitisation and onboarding
+continued through Q1, with 37 zonal-office sessions reaching 762 participants across various
+locations. The Q4 2025 Consultative Forum was held on 26 February 2026 in Abuja, and centred on
+Regulatory Updates, Uncredited Contributions, Regularisation of Temporary PINs, Benefit Payments
+and Transfer under NSITF, deployment of the PIN Validation Interface, database harmonisation,
+media campaign rollout, the Personal Pension Plan, PCRS deployment and the PENCAP data
+recapture exercise.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 21 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+FURTHER INSIGHT
+
+Compliance is now operating on three reinforcing tracks: enforcement through recoveries
+and ICPC collaboration, digitisation through e-PCC and PCRS, and engagement through
+the zonal sessions and Consultative Forum. The Commission will publish a quarterly
+Compliance Effectiveness Index in Q2, combining recovery rates, e-PCC turnaround times,
+and complaint-resolution speed. This will turn compliance measurement from a process
+metric into an outcome metric and give the market a clear signal on operator conduct.
+
+D.4
+
+Stakeholder engagement across the industry
+
+The Commission maintained a dense engagement calendar during Q1. The PenCom and Pension
+Operators Consultative Forum on 26 February 2026 anchored operator-level dialogue. Bilateral State
+engagements included Ogun, Zamfara, Katsina, Ekiti, Ondo, Kebbi and Anambra, each at different
+stages of legislative or implementation progress. In the FCT, the Commission engaged the Nigerian
+Union of Pensioners on pensioner welfare-related issues, including pension increase arrears,
+remittance concerns, health insurance, and other retirement welfare matters. Technical support was
+also delivered to the Lagos State Pension Commission on pension increase computations, and a
+virtual capacity-building programme was organised for the Management of the Bayelsa State Pension
+Board.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 22 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+08. DOMAIN E
+
+Investment Performance and Diversification
+
+P R E S E R V I N G P U R C H A S I N G P O W E R . Pension assets must generate
+real returns and be channelled to productive use if they are to preserve member
+purchasing power and contribute to national development.
+
+E.1
+
+Headline performance and the real-return question
+
+Investment returns in Q1 2026 were strong in nominal terms and, for the first time in seven quarters,
+positive in real terms for parts of the RSA Active Fund family on the rolling 36-month window. A
+sustained equity rally, supported by the Monetary Policy Committee’s 50 basis point rate cut in
+February and a moderation in the pace of inflation over January and February, produced the bulk of
+the quarterly gain. FGN bond valuations were flat to marginally positive as yields responded to the
+softer policy stance.
+
+Indicator
+
+Q4 2025
+
+Q1 2026
+
+Read
+
+Domestic equity portfolio (NGX
+exposure)
+
+₦3.96 tn
+
+₦5.46 tn
+
+Up 38.09% in the quarter.
+
+FGN securities portfolio
+
+₦16.33 tn
+
+₦17.14 tn
+
+Up 4.94%.
+
+RSA Active fund NAV
+
+₦19.19 tn
+
+₦20.97 tn
+
+Up 9.27%.
+
+RSA Retiree fund NAV
+
+₦2.27 tn
+
+₦2.37 tn
+
+Up 4.43%.
+
+CPFA quarterly rate of return
+(average)
+
+Volatile
+
+2.54%
+
+Range of -0.68% to
++10.28%.
+
+AES quarterly rate of return
+
+4.21%
+
+6.19%
+
+Up on stronger bond and
+equity prices.
+
+Below CPI
+
+Funds I, II, VI
+Active above CPI
+
+36-month real return, RSA Funds
+
+Trajectory positive;
+aggregate gap closing.
+
+FURTHER INSIGHT
+
+The Q1 real-return story is genuinely positive for the first time in the current inflation cycle.
+RSA Funds I, II and VI Active have moved above the 15.38% headline inflation reading on
+the 36-month window, driven by their relatively higher equity exposure and the sustained
+rally in domestic equities. Closing the gap for the aggregate industry is now the operative
+task. The revised investment guidelines provide the tools; disciplined execution at PFA
+level, supported by disclosure at RSA holder level of net real return over three years, is what
+will consolidate the trend.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 23 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+E.2
+
+Stronger Pensions, Stronger Nigeria
+
+Sources of portfolio growth, RSA Active and Retiree Funds
+
+Driver
+
+Q1 2026
+
+Comment
+
+Monthly contributions, RSA Active Fund
+
+₦1.18 trillion (+7.99%)
+
+Q4 was ₦1.09 trillion.
+
+Monthly contributions, RSA Retiree Fund
+
+₦230.36 billion (61.92%)
+
+Q4 boosted by publicsector arrears catch-up.
+
+Investment performance, Active and
+Retiree
+
+Positive net of realised
+and unrealised gains
+
+Equity revaluation the
+principal driver.
+
+Transfers from Active to Retiree and 25%
+withdrawals
+
+₦1.09 trillion
+
+New retirees moving into
+Retiree Funds.
+
+Benefits paid from Retiree Funds
+
+₦237.08 billion
+
+Down from ₦381.10
+billion in Q4.
+
+E.3
+
+CPFA and AES portfolios
+
+CPFA assets rose by ₦45.83 billion (1.70%) to ₦2.74 trillion in Q1 2026. The quarter’s performance
+was the mirror image of Q4. Where Q4 saw a translation loss of ₦41.92 billion on Naira appreciation,
+Q1 recorded a swing from unrealised losses of ₦41.53 billion in Q4 2025 to unrealised gains of ₦10.99
+billion, a ₦52.52 billion improvement driven by asset-price appreciation across bond and equity
+holdings. Interest and coupon income remained the largest source of portfolio growth at ₦52.96 billion.
+Realised gains of ₦12.13 billion, up materially from ₦0.64 billion in Q4, reflected favourable
+investment disposals and improved market opportunities during the quarter.
+Approved Existing Schemes assets grew by ₦147.51 billion (4.49%) to ₦3.43 trillion. The quarterly
+rate of return improved from 4.21% in Q4 to 6.19% in Q1, driven mainly by the appreciation in bond
+prices within the PFA portfolios during the period. AES assets remain a stable secondary segment of
+the industry and continue to attract fresh sponsor injections; Q1 injections totalled ₦146.72 billion.
+FURTHER INSIGHT
+
+The CPFA quarter is a useful natural experiment. The same portfolio can swing materially
+on foreign exchange and equity movement alone, with no change in underlying investment
+strategy. As alternatives and offshore exposure rise across the wider industry under the
+revised investment guidelines, currency-hedging policy and stress-testing frameworks will
+need to be tightened.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 24 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+09. OPERATING ENVIRONMENT
+
+Macroeconomic and Market Backdrop
+Macroeconomic and capital market conditions in Q1 2026 provided a supportive backdrop for pension
+fund performance. Real GDP expanded by 3.89% year-on-year, extending the growth cycle that
+began in mid-2024. Inflation held broadly stable, moving marginally between 15.06% and 15.38% over
+the quarter. The Monetary Policy Committee cut the policy rate by 50 basis points in February to
+26.50%, its first cut of the current cycle, and the Naira consolidated on the strength of improving
+external accounts and steady diaspora inflows. Equities rallied through the quarter, and the fixedincome market delivered stable performance across tenors.
+
+Indicator
+
+Q1 2026 reading
+
+Implication for pension industry
+
+Real GDP growth (Y-o-Y)
+
+3.89%
+
+Positive backdrop for contribution flows;
+slight moderation from 4.11% in Q4.
+
+Headline inflation (March)
+
+15.38%
+
+Real-return benchmark for portfolio
+construction.
+
+Monetary Policy Rate
+
+26.50% (cut by 50 bps in
+Feb)
+
+Supports bond valuations; reduces shortterm deposit yields.
+
+Naira, quarterly move
+
+Relatively stable
+
+Reduced FX drag on CPFA and offshore
+exposures.
+
+NGX All-Share Index
+
+Strong appreciation
+
+Drove ₦1.50 trillion increase in domestic
+equity holdings.
+
+FGN bond yields
+
+Compressing
+
+Capital gains for existing fixed-income
+holdings.
+
+Sources: National Bureau of Statistics; Central Bank of Nigeria; Nigerian Exchange Group; FMDQ; IMF; World Bank;
+Reuters.
+FURTHER INSIGHT
+
+The macroeconomic backdrop is currently doing the heavy lifting on pension asset growth.
+Should the equity rally reverse or should inflation re-accelerate, the underlying pace of
+contribution inflows is the bedrock that must remain healthy. Real-return discipline must be
+embedded into investment strategy now, while conditions are favourable, not in response
+to the next shock. The Q2 supervisory posture reflects this asymmetry.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 25 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+10. FORWARD LOOK
+
+Leading Indicators and Outlook for Q2 2026
+Forward-Looking Indicators Panel
+The leading indicators below are intended to move before headline KPIs do. Each carries an explicit
+trigger threshold; a breach will automatically escalate the issue to the Executive Committee for review.
+
+Leading indicator
+
+What it predicts
+
+Q1 2026 reading
+
+Trigger threshold
+
+Contribution-to-benefit
+ratio
+
+System maturity and
+cashflow stress
+
+Contributions ₦559.4
+bn vs benefits ~₦205
+bn
+
+Alert if below 3:1
+
+FGN securities yield gap
+to inflation
+
+Real-return outlook
+
+Compressing after
+MPR cut
+
+Alert if persistent
+for 3 quarters
+
+Top-5 PFA share of new
+RSAs
+
+Market structure risk
+
+54.41%
+
+Alert if rising 2
+quarters
+consecutively
+
+PPP contributionconversion rate
+
+Inclusion strategy
+effectiveness
+
+8.58%
+
+Target 30%+ by
+Q4 2026
+
+Subnational compliance
+count
+
+National coverage
+trajectory
+
+8 of 37 fully
+compliant; 17 with
+law pending
+
+Alert if no
+movement for 2
+quarters
+
+Recovery-to-arrears ratio
+
+Compliance
+enforcement
+effectiveness
+
+₦1.18 bn vs estimated
+arrears stock
+
+Alert if below 70%
+over rolling year
+
+Data recapture run rate
+
+Industry data integrity
+
+17.03% cumulative;
+58,220 in Q1
+
+Alert if Q1-on-Q1
+growth < 10%
+
+Outlook for Q2 2026
+The macroeconomic environment in Q2 2026 is expected to remain broadly stable, supported by
+continued implementation of fiscal and monetary reforms, improving investor confidence, and a
+gradual strengthening of key economic fundamentals. Inflation is projected to moderate over the
+quarter as the impact of previous monetary tightening, improved agricultural output, and relative
+exchange-rate stability filter through the economy, although risks around energy prices, transport
+costs, and global commodity markets remain in play. Exchange-rate conditions should hold on
+sustained foreign exchange market reforms, improved external reserves, steady diaspora
+remittances, and continued growth in non-oil export earnings.
+Growth is projected to strengthen modestly, led by services, agriculture, and gradual recovery in
+manufacturing and industrial production. The Monetary Policy Committee is likely to maintain its
+current stance, closely monitoring inflation developments and external sector risks. Capital markets
+should remain favourable: equities may continue to benefit from corporate earnings momentum and
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 26 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+banking sector recapitalisation activity, while fixed income should remain attractive to investors
+seeking stable returns.
+
+Implications for the pension industry
+▪ Continued macro stability should support sustained growth in pension assets through improved
+investment performance across both equity and fixed-income portfolios.
+▪ Relative stability in inflation and exchange rates should enhance real investment returns and
+support long-term asset-liability management by PFAs.
+▪ The favourable outlook for equities should continue to lift portfolio valuations and overall NAV,
+though the industry must guard against becoming reliant on a single asset class for growth.
+▪ The revised investment guidelines under PR 2.0 are expected to take effect in stages, supporting
+diversification into alternatives, real assets and inflation-linked instruments.
+▪ Accelerated Personal Pension Plan rollout, supported by the Accredited Pension Agent framework
+and digital and diaspora channels, should improve the funded ratio if operator-level targets are set
+and tracked.
+▪ Digital transformation across RSA recapture, benefit processing, and online compliance should
+compound efficiency gains through the year.
+FURTHER INSIGHT
+
+Q2 2026 should be characterised as a window of opportunity, not a moment of comfort. The
+macroeconomic backdrop is supportive; the binding constraints on the system (real returns,
+PPP funding and subnational coverage) are reform constraints. Acceleration on the policy
+side is what will translate the favourable environment into durable member outcomes.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 27 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+11. STRATEGIC PRIORITIES
+
+Strategic Priorities for Q2 2026
+The strategic priorities for Q2 2026 build on the initiatives commenced in the preceding quarter and
+are aligned with the Commission’s Pension Revolution 2.0 agenda. The focus is on deepening
+implementation, accelerating ongoing reforms, strengthening monitoring and compliance
+mechanisms, and assessing the impact of key initiatives across the industry.
+
+Pillar 1
+
+Enhancing pension adequacy and retiree welfare
+
+▪ Advance the phased implementation of the Minimum Pension Guarantee by concluding
+beneficiary identification, funding arrangements, and payment modalities for eligible retirees.
+▪ Deepen engagement with stakeholders on affordable healthcare initiatives for retirees and
+vulnerable pensioners, anchored on partnerships with Health Maintenance Organisations and the
+National Health Insurance Authority.
+▪ Sustain the clearance of outstanding accrued rights and pension liabilities, and strengthen
+monitoring to prevent future accumulation.
+▪ Enhance retiree access to pension services through digital platforms, improved service delivery
+standards, complaint-resolution processes, and targeted retiree education programmes.
+▪ Strengthen monitoring of pension enhancement implementation across PFAs so that retirees fully
+benefit from improved fund performance.
+
+Pillar 2
+
+Expanding pension coverage and financial inclusion
+
+▪ Intensify nationwide rollout of the Personal Pension Plan through targeted campaigns aimed at
+informal-sector operators, MSMEs, self-employed professionals, farmers, artisans, and gigeconomy workers.
+▪ Commence operational deployment of the Accredited Pension Agent framework to support
+pension enrolment and contribution collection at the grassroots level.
+▪ Promote awareness and adoption of innovative pension products, including foreign currency
+contributions, flexible contribution arrangements, and child savings support initiatives.
+▪ Strengthen collaboration with fintechs, digital payment providers, trade associations, market
+unions, and cooperative societies to drive inclusion.
+▪ Establish published quarterly funding-conversion targets at PFO level, and develop dedicated
+pension awareness programmes for youth and first-time entrants into the labour market.
+
+Pillar 3
+
+Strengthening governance, compliance and digital regulation
+
+▪ Continue implementation of enhanced corporate governance requirements and monitor
+compliance with the Pension Capitalisation Framework (PenCap).
+▪ Expand deployment of digital regulatory tools across online PCC processing, automated benefit
+administration workflows, real-time supervisory monitoring, and data-driven risk assessment.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 28 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+▪ Intensify compliance monitoring and enforcement action against defaulting employers in both the
+public and private sectors, and consolidate the ICPC collaboration into a routine referral pathway.
+▪ Strengthen cybersecurity and data protection oversight across Pension Fund Operators to
+safeguard pension assets and contributor information.
+▪ Advance the development of a Regulatory Sandbox Framework to facilitate responsible innovation
+in the pension industry while maintaining adequate consumer protection.
+▪ Convene the States Compliance Roundtable, anchored on the PCRS rollout and the planned
+Subnational CPS Adoption Index.
+
+Pillar 4
+
+Investment optimisation and pension-led economic
+development
+
+▪ Continue phased implementation of the revised investment guidelines with emphasis on portfolio
+diversification, alternative asset investments, inflation-protected assets, and enhanced risk
+management.
+▪ Encourage increased pension fund participation in viable infrastructure, housing and real-sector
+investments capable of generating sustainable long-term returns.
+▪ Promote responsible investment practices, including ESG-aligned investments and climateresilient infrastructure financing.
+▪ Strengthen investment performance monitoring to ensure that pension assets remain resilient
+amid changing domestic and global market conditions.
+▪ Support development of domestic capital markets through increased participation in high-quality
+long-term investment instruments, and publish a Pension Asset Quality Review covering FGN
+concentration, real-return performance, and portfolio diversification trajectory.
+
+Pillar 5
+
+Advancing State pension reform and subnational compliance
+
+▪ Intensify engagement with States and the FCT to accelerate CPS adoption and effective
+implementation.
+▪ Provide technical support to States transitioning from Defined Benefit Schemes and Contributory
+Defined Benefit Schemes to the CPS.
+▪ Encourage States to establish and adequately fund Retirement Benefits Bond Redemption Fund
+Accounts (RBBRFAs) and settle outstanding pension liabilities.
+▪ Promote adoption of Pension Clearance Certificate requirements and other compliance
+mechanisms at the subnational level.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 29 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+12. STATISTICAL ANNEX
+
+Statistical Annex
+This annex collates the principal statistical tables underlying the report. It is intended for reference;
+readers seeking deeper time-series data should consult the machine-readable Industry Statistical
+Annex issued alongside this publication.
+
+Annex Table 1. Industry Pension Assets by Fund Type
+As at 31 December 2025 and 31 March 2026 (₦ trillion).
+
+Fund type
+
+31-Dec-2025
+
+31-Mar-2026
+
+Δ (₦ tn)
+
+% Change
+
+RSA Active Funds
+
+19.19
+
+20.97
+
++1.78
+
++9.27%
+
+RSA Retiree Funds
+
+2.27
+
+2.37
+
++0.10
+
++4.43%
+
+CPFA
+
+2.69
+
+2.74
+
++0.05
+
++1.70%
+
+AES
+
+3.28
+
+3.43
+
++0.15
+
++4.49%
+
+TOTAL
+
+27.45
+
+29.52
+
++2.07
+
++7.53%
+
+New
+RSAs Q1
+
+Share
+(%)
+
+Cumulative
+tier
+
+Stanbic IBTC Pension Managers Limited
+
+25,024
+
+17.47
+
+Top tier
+
+AccessARM Pension Managers Limited
+
+15,234
+
+10.63
+
+Top tier
+
+FCMB Pensions Limited
+
+14,542
+
+10.15
+
+Top tier
+
+TangerineAPT Pensions Limited
+
+13,827
+
+9.65
+
+Top tier
+
+Trustfund Pensions Limited
+
+9,638
+
+6.73
+
+Mid tier
+
+Leadway Pensure
+
+9,376
+
+6.55
+
+Mid tier
+
+Veritas Glanvills Pensions Limited
+
+6,333
+
+4.42
+
+Mid tier
+
+Premium Pension Limited
+
+6,074
+
+4.24
+
+Mid tier
+
+Crusader Sterling Pensions Limited
+
+5,798
+
+4.05
+
+Mid tier
+
+Oak Pensions Limited
+
+4,637
+
+3.24
+
+Mid tier
+
+Fidelity Pension Managers Limited
+
+4,382
+
+3.06
+
+Mid tier
+
+GT Pension Managers Limited
+
+3,842
+
+2.68
+
+Lower tier
+
+NLPC Pension Fund Administrators Limited
+
+3,236
+
+2.26
+
+Lower tier
+
+Annex Table 2. RSA Registrations by PFA, Q1 2026
+Top operators by quarterly new RSA registrations.
+
+PFA
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 30 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+Nigerian University Pension Management Company Limited
+
+3,033
+
+2.12
+
+Lower tier
+
+Citizens Pensions Limited
+
+2,981
+
+2.08
+
+Lower tier
+
+Pensions Alliance Limited
+
+2,527
+
+1.76
+
+Lower tier
+
+CardinalStone Pensions Managers
+
+1,944
+
+1.36
+
+Lower tier
+
+Norrenberger Pensions
+
+1,262
+
+0.88
+
+Lower tier
+
+Parthian Pensions Limited
+
+441
+
+0.31
+
+Lower tier
+
+NPF Pensions Limited
+
+353
+
+0.25
+
+Lower tier
+
+143,248
+
+100.00%
+
+20 PFAs
+
+TOTAL Industry
+
+Annex Table 3. Benefit Approvals Summary, Q1 2026
+Benefit type
+
+Approvals
+
+Amount (₦ bn)
+
+Federal
+
+State
+
+Private
+
+Programmed Withdrawal
+
+6,368
+
+39.26 (lump)
+
+3,899
+
+168
+
+2,301
+
+Retiree Life Annuity
+
+4,064
+
+20.23 (lump);
+44.40 (prem)
+
+3,053
+
+95
+
+916
+
+Death Benefits
+
+2,162
+
+19.08
+
+1,143
+
+43
+
+976
+
+En bloc payments
+
+8,609
+
+11.97
+
+932
+
+41
+
+7,636
+
+25% (unemployment)
+
+7,812
+
+10.72
+
+320
+
+21
+
+7,471
+
+Mortgage equity (Sec
+89(2))
+
+28,437
+
+92.70
+
+22,517
+
+97
+
+5,823
+
+Voluntary contribution
+access
+
+2,113
+
+9.91
+
+534
+
+1
+
+1,578
+
+34
+
+1.72
+
+2
+
+0
+
+32
+
+Pre-Act / NSITF
+settlement
+
+Annex Table 4. Compliance Activities Summary, Q1 2026
+Activity
+
+Q1 2026 metric
+
+e-PCCs issued
+
+12,185
+
+Contributions remitted under e-PCCs
+
+₦212.63 bn for 199,481 employees
+
+Recoveries, total (15 employers)
+
+₦1.18 bn
+
+of which principal contributions
+
+₦450 million
+
+of which penalties
+
+₦729 million
+
+Cumulative recoveries since June 2012
+
+₦33.80 bn (₦16.50 bn principal + ₦17.30 bn
+penalties)
+
+Recovery Agents engaged
+
+41
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 31 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+ICPC-referred employer interrogations
+
+6 (framework activated in Q1)
+
+Zonal sensitisation sessions
+
+37 events with 762 participants
+
+New executive appointments approved
+
+6 across 5 PFOs
+
+Regulatory instruments issued in the
+quarter
+
+7 (see Domain D)
+
+Annex Table 5. Subnational Implementation Status, Q1 2026
+Adoption category
+
+Count
+
+Notes
+
+States fully compliant,
+operating CPS
+
+8
+
+Includes Lagos, Kaduna, Edo, Ogun (RBBRFA and
+actuarial valuation in progress).
+
+States with CPS law passed
+but not yet implementing
+
+17
+
+Principal focus of bilateral compliance engagement;
+PCRS rollout, Bureau establishment, PFA appointment
+outstanding.
+
+Active CDBS implementation
+
+2
+
+Jigawa and Kano operating under CDBS; Zamfara has
+initiated transition discussions with the Commission.
+
+Non-compliant arrangement
+
+1
+
+Kano State, pension funds held with commercial banks
+rather than licensed PFAs.
+
+Other jurisdictions (early
+stage, transitioning)
+
+9
+
+Katsina (3D Model transition), Ekiti, Ondo, Kebbi,
+Anambra, Bayelsa, Cross River at various stages.
+
+TOTAL
+
+37
+
+36 States and the Federal Capital Territory
+
+Annex Table 6. Personal Pension Plan Headlines, Q1 2026
+Metric
+
+Value
+
+Total registered PPP RSAs
+
+219,316
+
+Funded RSAs
+
+18,811 (8.58%)
+
+Unfunded RSAs
+
+200,505 (91.42%)
+
+Q1 2026 contributions received
+
+₦147.16 million
+
+Cumulative contributions since
+inception
+
+₦1.66 billion
+
+Q1 contingent withdrawals
+
+₦11.12 million by 15 PPCs through 4 PFAs
+
+Cumulative contingent withdrawals
+
+₦124.30 million to 346 PPCs
+
+Q1 conversions to mandatory CPS
+
+(subject to Q1 update)
+
+AccessARM market share, Q1 PPP
+
+33.64% of new PPP RSAs
+
+AccessARM market share, cumulative
+
+52.4% of all PPP RSAs
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 32 of 33
+
+PenCom - Public
+
+PenCom Q1 2026 Quarterly Industry Report
+
+Stronger Pensions, Stronger Nigeria
+
+Estimated informal sector workforce
+(NBS)
+
+92.1 million
+
+PPP penetration of informal sector
+
+approximately 0.24%
+
+Annex Table 7. Pension Industry Asset Allocation, 31 March 2026
+Asset class
+
+Share of NAV
+(%)
+
+FGN Bonds
+
+54.00
+
+Core long-duration capital
+preservation.
+
+FGN Treasury Bills
+
+3.59
+
+Short-end liquidity carry.
+
+FGN Agency Bonds, Sukuk, Green
+Bonds
+
+0.48
+
+Limited footprint; growth
+opportunity under revised
+guidelines.
+
+Domestic and foreign equities
+
+19.34
+
+Domestic 18.50% (₦5.46 tn);
+foreign 0.84%.
+
+Money market instruments
+
+8.83
+
+Liquidity buffer.
+
+Corporate debt securities
+
+7.62
+
+High-grade corporate exposure.
+
+State Government securities
+
+1.26
+
+Lagos bond exposure advancing.
+
+Alternatives (infrastructure, PE, REITs,
+mutual funds, supranational)
+
+3.95
+
+Principal diversification target;
+mutual funds up 47.84% in Q1.
+
+Other and cash
+
+0.93
+
+Residual liquidity.
+
+TOTAL
+
+100.00
+
+Comment
+
+Total NAV ₦29.52 trillion
+
+This report draws on validated data from the Commission’s regulatory systems, supplemented by macroeconomic and
+capital market data from the Central Bank of Nigeria, the National Bureau of Statistics, the Nigerian Exchange Group,
+FMDQ, the International Monetary Fund and the World Bank.
+
+National Pension Commission
+
+Q1 2026 Quarterly Industry Report
+
+Page 33 of 33
+
+
