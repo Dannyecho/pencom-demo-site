@@ -6,6 +6,23 @@ export const navItems = [
     href: "/",
     icon: "Home",
     description: "Official homepage",
+    // Every homepage design, so reviewers can compare them. "Home" stays highlighted on each.
+    match: ["/", "/home-showcase", "/home-showcase2", "/home-retirees", "/home-minimal", "/home-classic"],
+    megaMenu: {
+      columns: [
+        {
+          title: "Homepage designs",
+          links: [
+            { label: "Main homepage", href: "/", note: "For everyone: audience picker, search and a compact slider" },
+            { label: "Showcase", href: "/home-showcase", note: "Cinematic banner, expanding audience cards and spotlight effects" },
+            { label: "Full-width slider", href: "/home-showcase2", note: "Large photo slider with alerts floating over it" },
+            { label: "For retirees", href: "/home-retirees", note: "Large type, labelled controls and fewer choices" },
+            { label: "Minimal", href: "/home-minimal", note: "Quiet layout with lots of white space" },
+            { label: "Classic", href: "/home-classic", note: "The earlier full-width slider design" },
+          ],
+        },
+      ],
+    },
   },
   {
     label: "About",

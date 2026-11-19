@@ -818,6 +818,21 @@ const ig: Record<string, string> = {
   "Industry figures and charts": "Ọnụọgụ ụlọ ọrụ na eserese",
   "Circulars and regulations": "Akwụkwọ ozi na iwu",
   "Open the newsroom": "Mepee ụlọ akụkọ",
+  /* ── Home menu ── */
+  "Homepage designs": "Nhazi ibe mbụ",
+  "Main homepage": "Isi ibe mbụ",
+  "Showcase": "Ngosipụta",
+  "Full-width slider": "Foto sara mbara",
+  "Minimal": "Dị mfe",
+  "Classic": "Ochie",
+  "For everyone": "Maka onye ọ bụla",
+  "For everyone: audience picker, search and a compact slider": "Maka onye ọ bụla: nhọrọ ndị ọrụ, ọchụchọ na obere foto",
+  "Cinematic banner, expanding audience cards and spotlight effects": "Nnukwu foto, kaadị ndị ọrụ na-agbasa na mmetụta ọkụ",
+  "Large photo slider with alerts floating over it": "Nnukwu foto na-agbanwe nwere ọkwa n'elu ya",
+  "Large type, labelled controls and fewer choices": "Mkpụrụedemede buru ibu, njikwa nwere aha na nhọrọ ole na ole",
+  "Quiet layout with lots of white space": "Nhazi dị jụụ nwere ọtụtụ oghere",
+  "The earlier full-width slider design": "Nhazi mbụ nwere foto sara mbara",
+  "Audience picker, search and a compact slider": "Nhọrọ ndị ọrụ, ọchụchọ na obere foto",
 };
 
 export default ig;

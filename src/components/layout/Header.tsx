@@ -134,7 +134,7 @@ export default function Header() {
                   <Link
                     to={item.href}
                     className={`flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-medium transition-all ${
-                      location.pathname === item.href
+                      location.pathname === item.href || item.match?.includes(location.pathname)
                         ? "text-[#117F21] bg-[#E8F5E9]"
                         : "text-gray-700 hover:text-[#117F21] hover:bg-[#F5F5F5]"
                     }`}
@@ -154,10 +154,10 @@ export default function Header() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 8 }}
                         transition={{ duration: 0.2 }}
-                        className="absolute top-full left-1/2 -translate-x-1/2 pt-2"
+                        className={`absolute top-full pt-2 ${item.megaMenu.columns.length === 1 ? "left-0" : "left-1/2 -translate-x-1/2"}`}
                       >
-                        <div className="bg-white rounded-xl shadow-xl border border-gray-100 p-6 min-w-[640px]">
-                          <div className="grid grid-cols-3 gap-6">
+                        <div className={`bg-white rounded-xl shadow-xl border border-gray-100 ${item.megaMenu.columns.length === 1 ? "p-3 w-[22rem]" : "p-6 min-w-[640px]"}`}>
+                          <div className="grid gap-6" style={{ gridTemplateColumns: `repeat(${item.megaMenu.columns.length}, minmax(0, 1fr))` }}>
                             {item.megaMenu.columns.map((col) => (
                               <div key={col.title}>
                                 <h4 className="text-xs font-semibold text-[#117F21] uppercase tracking-wider mb-3">
@@ -168,9 +168,15 @@ export default function Header() {
                                     <li key={link.label}>
                                       <Link
                                         to={link.href}
-                                        className="text-sm text-gray-600 hover:text-[#117F21] hover:bg-[#F5F5F5] rounded-md px-2 py-1.5 block transition-colors"
+                                        aria-current={location.pathname === link.href ? "page" : undefined}
+                                        className={`text-sm rounded-md px-2 py-1.5 block transition-colors ${
+                                          location.pathname === link.href ? "bg-[#E8F5E9] text-[#117F21]" : "text-gray-600 hover:text-[#117F21] hover:bg-[#F5F5F5]"
+                                        }`}
                                       >
-                                        {link.label}
+                                        <span className={(link as { note?: string }).note ? "font-semibold" : undefined}>{link.label}</span>
+                                        {(link as { note?: string }).note && (
+                                          <span className="mt-0.5 block text-xs font-normal leading-snug text-gray-500">{(link as { note?: string }).note}</span>
+                                        )}
                                       </Link>
                                     </li>
                                   ))}
@@ -253,7 +259,7 @@ export default function Header() {
                   <Link
                     to={item.href}
                     className={`flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
-                      location.pathname === item.href
+                      location.pathname === item.href || item.match?.includes(location.pathname)
                         ? "text-[#117F21] bg-[#E8F5E9]"
                         : "text-gray-700 hover:bg-gray-50"
                     }`}
@@ -264,11 +270,12 @@ export default function Header() {
                   {item.megaMenu && (
                     <div className="ml-8 mt-1 space-y-1">
                       {item.megaMenu.columns.map((col) =>
-                        col.links.slice(0, 3).map((link) => (
+                        col.links.slice(0, item.megaMenu!.columns.length === 1 ? undefined : 3).map((link) => (
                           <Link
                             key={link.label}
                             to={link.href}
-                            className="block px-3 py-2 text-sm text-gray-500 hover:text-[#117F21] rounded-md"
+                            aria-current={location.pathname === link.href ? "page" : undefined}
+                            className={`block px-3 py-2 text-sm rounded-md ${location.pathname === link.href ? "font-semibold text-[#117F21]" : "text-gray-500 hover:text-[#117F21]"}`}
                           >
                             {link.label}
                           </Link>

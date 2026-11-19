@@ -818,6 +818,21 @@ const yo: Record<string, string> = {
   "Industry figures and charts": "Ìṣirò ilé-iṣẹ́ àti àwòrán àtẹ",
   "Circulars and regulations": "Ìkéde àti ìlànà",
   "Open the newsroom": "Ṣí yàrá ìròyìn",
+  /* ── Home menu ── */
+  "Homepage designs": "Àwọn àpẹẹrẹ ojú-ìwé àkọ́kọ́",
+  "Main homepage": "Ojú-ìwé àkọ́kọ́ pàtàkì",
+  "Showcase": "Àfihàn",
+  "Full-width slider": "Àwòrán gbígbòòrò",
+  "Minimal": "Ìrọ̀rùn",
+  "Classic": "Ti àtijọ́",
+  "For everyone": "Fún gbogbo ènìyàn",
+  "For everyone: audience picker, search and a compact slider": "Fún gbogbo ènìyàn: àṣàyàn olùlò, ìwádìí àti àwòrán kékeré",
+  "Cinematic banner, expanding audience cards and spotlight effects": "Àwòrán ńlá, káàdì olùlò tó ń fẹ̀ àti ìmọ́lẹ̀ àfihàn",
+  "Large photo slider with alerts floating over it": "Àwòrán ńlá tó ń yí pẹ̀lú ìkìlọ̀ lórí rẹ̀",
+  "Large type, labelled controls and fewer choices": "Ọ̀rọ̀ ńlá, bọ́tìnnì pẹ̀lú orúkọ àti àṣàyàn díẹ̀",
+  "Quiet layout with lots of white space": "Ìtò píparọ́rọ́ pẹ̀lú àyè púpọ̀",
+  "The earlier full-width slider design": "Àpẹẹrẹ àtijọ́ pẹ̀lú àwòrán gbígbòòrò",
+  "Audience picker, search and a compact slider": "Àṣàyàn olùlò, ìwádìí àti àwòrán kékeré",
 };
 
 export default yo;

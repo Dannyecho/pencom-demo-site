@@ -818,6 +818,21 @@ const ha: Record<string, string> = {
   "Industry figures and charts": "Alƙaluman masana'antu da zane-zane",
   "Circulars and regulations": "Sanarwoyi da ka'idoji",
   "Open the newsroom": "Buɗe ɗakin labarai",
+  /* ── Home menu ── */
+  "Homepage designs": "Zane-zanen shafin farko",
+  "Main homepage": "Babban shafin farko",
+  "Showcase": "Nuni",
+  "Full-width slider": "Hotuna masu faɗi",
+  "Minimal": "Mai sauƙi",
+  "Classic": "Na da",
+  "For everyone": "Don kowa",
+  "For everyone: audience picker, search and a compact slider": "Don kowa: zaɓin masu amfani, bincike da ƙaramin hoto mai juyawa",
+  "Cinematic banner, expanding audience cards and spotlight effects": "Babban hoto, katunan masu amfani masu faɗaɗa da tasirin haske",
+  "Large photo slider with alerts floating over it": "Babban hoto mai juyawa tare da faɗakarwa a samansa",
+  "Large type, labelled controls and fewer choices": "Babban rubutu, maɓallai masu suna da ƙarancin zaɓi",
+  "Quiet layout with lots of white space": "Tsari mai natsuwa da sarari mai yawa",
+  "The earlier full-width slider design": "Zanen farko mai hoto mai faɗi",
+  "Audience picker, search and a compact slider": "Zaɓin masu amfani, bincike da ƙaramin hoto mai juyawa",
 };
 
 export default ha;
